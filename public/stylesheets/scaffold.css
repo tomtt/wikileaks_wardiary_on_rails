@@ -52,3 +52,12 @@ a:hover { color: #fff; background-color:#000; }
   list-style: square;
 }
 
+#war-events-index {
+  border-collapse: collapse;
+}
+
+#war-events-index td {
+  border: solid 1px #ccc;
+  padding: 0px 2px 0px 2px;
+  padding-left: 2px;
+}
