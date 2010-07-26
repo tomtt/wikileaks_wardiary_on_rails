@@ -9,9 +9,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100726194054) do
+ActiveRecord::Schema.define(:version => 20100726194544) do
 
-  create_table "war_events", :id => false, :force => true do |t|
+  create_table "war_events", :force => true do |t|
     t.string   "report_key"
     t.datetime "date"
     t.string   "type_of_event"
