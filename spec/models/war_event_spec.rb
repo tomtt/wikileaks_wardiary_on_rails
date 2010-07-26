@@ -41,4 +41,8 @@ describe WarEvent do
   it "should create a new instance given valid attributes" do
     WarEvent.create!(@valid_attributes)
   end
+
+  it "has 30 items per page" do
+    WarEvent.per_page.should == 30
+  end
 end

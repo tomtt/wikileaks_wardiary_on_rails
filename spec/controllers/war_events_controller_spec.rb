@@ -12,6 +12,16 @@ describe WarEventsController do
       get :index
       assigns[:war_events].should == [mock_war_event]
     end
+
+    it "paginates using the :page param" do
+      WarEvent.should_receive(:paginate).with(hash_including(:page => "3"))
+      get :index, :page => 3
+    end
+
+    it "paginates ordered by date most recent first" do
+      WarEvent.should_receive(:paginate).with(hash_including(:order => 'date DESC'))
+      get :index, :page => 3
+    end
   end
 
   describe "GET show" do

@@ -2,7 +2,7 @@ class WarEventsController < ApplicationController
   # GET /war_events
   # GET /war_events.xml
   def index
-    @war_events = WarEvent.all(:limit => 10)
+    @war_events = WarEvent.paginate :page => params[:page], :order => 'date DESC'
 
     respond_to do |format|
       format.html # index.html.erb
