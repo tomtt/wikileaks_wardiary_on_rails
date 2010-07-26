@@ -1,0 +1,22 @@
+<h1>Listing war_events</h1>
+
+<table>
+  <tr>
+    <th>Type of event</th>
+    <th>Category</th>
+    <th>Region</th>
+    <th>Title</th>
+    <th>Date</th>
+  </tr>
+
+<% @war_events.each do |war_event| %>
+  <tr>
+    <td><%=h war_event.type_of_event %></td>
+    <td><%=h war_event.category %></td>
+    <td><%=h war_event.region %></td>
+    <td><%=h war_event.title %></td>
+    <td><%=h war_event.date %></td>
+    <td><%= link_to 'Show', war_event %></td>
+  </tr>
+<% end %>
+</table>
