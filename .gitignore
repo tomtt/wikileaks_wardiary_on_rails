@@ -1,0 +1,43 @@
+## MAC OS
+.DS_Store
+
+## TEXTMATE
+*.tmproj
+tmtags
+
+## EMACS
+*~
+\#*
+.\#*
+
+## VIM
+*.swp
+
+## NETBEANS
+nbproject
+
+## PROJECT::GENERAL
+coverage
+rdoc
+pkg
+
+config/database.yml
+*.cache
+*.log
+db/cstore/**
+doc/api
+doc/app
+doc/plugins
+vendor/gems/*/coverage
+.project
+public/features/*
+/tmp/**/*
+/tmp/*
+test/tmp
+public/assets
+public/assets-test
+
+config/initializers/personal_options.rb
+rerun.txt
+
+public/tmp.html
