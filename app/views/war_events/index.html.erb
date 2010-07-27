@@ -42,7 +42,7 @@
     <td><%=h war_event.enemy_wia %></td>
     <td><%=h war_event.enemy_kia %></td>
 
-    <td><%=h time_ago_in_words(war_event.date) %> ago</td>
+    <td><%=h war_event.date.to_s(:concise) %></td>
     <td><%= link_to 'Show', war_event_path(war_event, :page => @war_events.current_page) %></td>
   </tr>
 <% end %>
