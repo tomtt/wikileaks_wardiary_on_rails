@@ -1,48 +1,46 @@
 require 'spec_helper'
 
 describe WarEvent do
-  before(:each) do
-    @valid_attributes = {
-      :report_key => "value for report_key",
-      :type_of_event => "value for type_of_event",
-      :category => "value for category",
-      :tracking_number => "value for tracking_number",
-      :region => "value for region",
-      :attack_on => "value for attack_on",
-      :complex_attack => "value for complex_attack",
-      :reporting_unit => "value for reporting_unit",
-      :unit_name => "value for unit_name",
-      :type_of_unit => "value for type_of_unit",
-      :mgrs => "value for mgrs",
-      :latitude => "value for latitude",
-      :longitude => "value for longitude",
-      :originator_group => "value for originator_group",
-      :updated_by_group => "value for updated_by_group",
-      :ccir => "value for ccir",
-      :sigact => "value for sigact",
-      :affiliation => "value for affiliation",
-      :d_color => "value for d_color",
-      :classification => "value for classification",
-      :title => "value for title",
-      :summary => "value for summary",
-      :friendly_wia => 1,
-      :friendly_kia => 1,
-      :host_nation_wia => 1,
-      :host_nation_kia => 1,
-      :civilian_wia => 1,
-      :civilian_kia => 1,
-      :enemy_wia => 1,
-      :enemy_kia => 1,
-      :enemy_detained => 1,
-      :date => Time.now
-    }
+  it "has a working factory" do
+    Factory.create(:war_event).should be_valid
   end
 
-  it "should create a new instance given valid attributes" do
-    WarEvent.create!(@valid_attributes)
+  it "has a factory that can create multiple instances" do
+    Factory.create :war_event
+    Factory.build(:war_event).should be_valid
   end
 
   it "has 30 items per page" do
     WarEvent.per_page.should == 30
+  end
+
+  describe "to_param" do
+    it "is the report_key" do
+      war_event = Factory.create(:war_event, :report_key => "fluffy-bunny")
+      war_event.to_param.should == "fluffy-bunny"
+    end
+  end
+
+  describe "the report_key" do
+    it "is unique" do
+      Factory.create(:war_event, :report_key => "cuddly-bear")
+      Factory.build(:war_event, :report_key => "cuddly-bear").should_not be_valid
+    end
+
+    it "can be 255 chars in size" do
+      Factory.build(:war_event, :report_key => "x" * 255).should be_valid
+    end
+
+    it "can not be 256 chars in size" do
+      Factory.build(:war_event, :report_key => "x" * 256).should_not be_valid
+    end
+
+    it "can not be NULL in the database" do
+      lambda { Factory.create(:war_event, :report_key => nil) }.should raise_error
+    end
+
+    it "can not be an empty string" do
+      Factory.build(:war_event, :report_key => "").should_not be_valid
+    end
   end
 end

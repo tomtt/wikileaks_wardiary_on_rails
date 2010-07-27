@@ -13,7 +13,7 @@ class WarEventsController < ApplicationController
   # GET /war_events/1
   # GET /war_events/1.xml
   def show
-    @war_event = WarEvent.find(params[:id])
+    @war_event = WarEvent.find_by_report_key(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

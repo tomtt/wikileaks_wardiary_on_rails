@@ -9,10 +9,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100726194544) do
+ActiveRecord::Schema.define(:version => 20100726233226) do
 
   create_table "war_events", :force => true do |t|
-    t.string   "report_key"
+    t.string   "report_key",       :null => false
     t.datetime "date"
     t.string   "type_of_event"
     t.string   "category"
@@ -45,5 +45,7 @@ ActiveRecord::Schema.define(:version => 20100726194544) do
     t.string   "d_color"
     t.string   "classification"
   end
+
+  add_index "war_events", ["report_key"], :name => "index_war_events_on_report_key", :unique => true
 
 end

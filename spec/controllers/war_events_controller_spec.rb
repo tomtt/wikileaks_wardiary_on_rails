@@ -26,8 +26,8 @@ describe WarEventsController do
 
   describe "GET show" do
     it "assigns the requested war_event as @war_event" do
-      WarEvent.stub(:find).with("37").and_return(mock_war_event)
-      get :show, :id => "37"
+      WarEvent.stub(:find_by_report_key).with("99AA5C2F-2129-4200-AB73-AA29D94E0D83").and_return(mock_war_event)
+      get :show, :id => "99AA5C2F-2129-4200-AB73-AA29D94E0D83"
       assigns[:war_event].should equal(mock_war_event)
     end
   end
