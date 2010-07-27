@@ -5,6 +5,17 @@ Github: http://github.com/tomtt/wikileaks_wardiary_on_rails
 
 You can find a working release of this app at http://war-logs-on-rails.com
 
+== Install
+* For instructions on how to get Ruby/Rails: http://rubyonrails.org/download
+* The data will be imported by the migrations from a file compressed using 7za. This command needs to work
+  on your system to be able to perform the import. Please get it from http://www.7-zip.org/download.html.
+* create your database.yml file, using one of the config/database.yml.*.example files if you prefer
+* rake db:create:all; rake:db:migrate
+
+The import will currently not work on systems that do not support 'piping' data to another process. If you
+can think of an efficient way to import the compressed data on these systems (i.e. windows) please submit
+a patch.
+
 == About me
 * http://www.unboxedconsulting.com/people/tom-ten-thij
 * war-logs-on-rails@tomtenthij.nl
