@@ -1,5 +1,4 @@
-class ActiveRecord::ConnectionAdapters::MysqlAdapter
-end
+require 'digest/sha1'
 
 class ImportOriginalWikileaksData < ActiveRecord::Migration
   def self.import_7z_data(file)
@@ -17,6 +16,8 @@ class ImportOriginalWikileaksData < ActiveRecord::Migration
   def self.up
     check_for_7za!
     data_file = Rails.root.join('data', 'afg-war-diary.sql.7z')
+    raise "Invalid SHA1 for original data file" unless Digest::SHA1.hexdigest(File.read(data_file)) ==
+      "9463f73ebbcd3f95899a138d6ba9817e1b6b800d"
     # Creating the war_diary table because the first line of the data will delete
     # it which will raise an error if it does not exist
     create_table :war_diary
