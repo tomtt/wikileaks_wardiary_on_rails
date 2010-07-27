@@ -45,13 +45,17 @@ MSG
   end
 end
 
-Rake.application.instance_variable_get('@tasks').delete('default')
+# Rake.application.instance_variable_get('@tasks').delete('default')
+# Remove Test::Unit pre-requisite instead of clearing all.
+Rake::Task[:default].prerequisites.delete('test')
 
 spec_prereq = File.exist?(File.join(RAILS_ROOT, 'config', 'database.yml')) ? "db:test:prepare" : :noop
 task :noop do
 end
 
-task :default => :spec
+# Make spec the first task run.
+# task :default => :spec
+Rake::Task[:default].prerequisites.unshift('spec')
 task :stats => "spec:statsetup"
 
 desc "Run all specs in spec directory (excluding plugin specs)"
