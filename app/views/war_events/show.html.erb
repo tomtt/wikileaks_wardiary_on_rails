@@ -1,162 +1,122 @@
-<p>
-  <b>Report key:</b>
-  <%=h @war_event.report_key %>
-</p>
+<h1><%=h @war_event.title %></h1>
 
-<p>
-  <b>Type of event:</b>
-  <%=h @war_event.type_of_event %>
-</p>
+<div class="summary">
+  <p>
+    <b>Summary:</b>
+    <%=h @war_event.summary %>
+  </p>
+</div>
 
-<p>
-  <b>Category:</b>
-  <%=h @war_event.category %>
-</p>
+<table>
+  <tr>
+    <th>Type of event:</th>
+    <td><%=h @war_event.type_of_event %></td>
+  </tr>
 
-<p>
-  <b>Tracking number:</b>
-  <%=h @war_event.tracking_number %>
-</p>
+  <tr>
+    <th>Category:</th>
+    <td><%=h @war_event.category %></td>
+  </tr>
 
-<p>
-  <b>Region:</b>
-  <%=h @war_event.region %>
-</p>
+  <tr>
+    <th>Region:</th>
+    <td><%=h @war_event.region %></td>
+  </tr>
 
-<p>
-  <b>Attack on:</b>
-  <%=h @war_event.attack_on %>
-</p>
+  <tr>
+    <th>Date:</th>
+    <td><%=h @war_event.date.to_s(:full) %></td>
+  </tr>
 
-<p>
-  <b>Complex attack:</b>
-  <%=h @war_event.complex_attack %>
-</p>
+  <tr>
+    <th>Attack on:</th>
+    <td><%=h @war_event.attack_on %></td>
+  </tr>
 
-<p>
-  <b>Reporting unit:</b>
-  <%=h @war_event.reporting_unit %>
-</p>
+  <tr>
+    <th>Complex attack:</th>
+    <td><%=h @war_event.complex_attack %></td>
+  </tr>
 
-<p>
-  <b>Unit name:</b>
-  <%=h @war_event.unit_name %>
-</p>
 
-<p>
-  <b>Type of unit:</b>
-  <%=h @war_event.type_of_unit %>
-</p>
+  <tr>
+    <th>Mgrs:</th>
+    <td><%=h @war_event.mgrs %></td>
+  </tr>
 
-<p>
-  <b>Mgrs:</b>
-  <%=h @war_event.mgrs %>
-</p>
+  <tr>
+    <th>Latitude:</th>
+    <td><%=h @war_event.latitude %></td>
+  </tr>
 
-<p>
-  <b>Latitude:</b>
-  <%=h @war_event.latitude %>
-</p>
+  <tr>
+    <th>Longitude:</th>
+    <td><%=h @war_event.longitude %></td>
+  </tr>
 
-<p>
-  <b>Longitude:</b>
-  <%=h @war_event.longitude %>
-</p>
+  <tr>
+    <th>Originator group:</th>
+    <td><%=h @war_event.originator_group %></td>
+  </tr>
 
-<p>
-  <b>Originator group:</b>
-  <%=h @war_event.originator_group %>
-</p>
+  <tr>
+    <th>Updated by group:</th>
+    <td><%=h @war_event.updated_by_group %></td>
+  </tr>
 
-<p>
-  <b>Updated by group:</b>
-  <%=h @war_event.updated_by_group %>
-</p>
+  <tr>
+    <th>Ccir:</th>
+    <td><%=h @war_event.ccir %></td>
+  </tr>
 
-<p>
-  <b>Ccir:</b>
-  <%=h @war_event.ccir %>
-</p>
+  <tr>
+    <th>Sigact:</th>
+    <td><%=h @war_event.sigact %></td>
+  </tr>
 
-<p>
-  <b>Sigact:</b>
-  <%=h @war_event.sigact %>
-</p>
+  <tr>
+    <th>Affiliation:</th>
+    <td><%=h @war_event.affiliation %></td>
+  </tr>
 
-<p>
-  <b>Affiliation:</b>
-  <%=h @war_event.affiliation %>
-</p>
+</table>
+<br/>
 
-<p>
-  <b>D color:</b>
-  <%=h @war_event.d_color %>
-</p>
+<%= wia_kia_table(@war_event) %>
+<br/>
 
-<p>
-  <b>Classification:</b>
-  <%=h @war_event.classification %>
-</p>
+<table class="data">
+  <tr>
+    <th>Report key:</th>
+    <td><%=h @war_event.report_key %></td>
+  </tr>
+  <tr>
+    <th>Tracking number:</th>
+    <td><%=h @war_event.tracking_number %></td>
+  </tr>
+  <tr>
+    <th>Reporting unit:</th>
+    <td><%=h @war_event.reporting_unit %></td>
+  </tr>
 
-<p>
-  <b>Title:</b>
-  <%=h @war_event.title %>
-</p>
+  <tr>
+    <th>Unit name:</th>
+    <td><%=h @war_event.unit_name %></td>
+  </tr>
 
-<p>
-  <b>Summary:</b>
-  <%=h @war_event.summary %>
-</p>
+  <tr>
+    <th>Type of unit:</th>
+    <td><%=h @war_event.type_of_unit %></td>
+  </tr>
+  <tr>
+    <th>D color:</th>
+    <td><%=h @war_event.d_color %></td>
+  </tr>
 
-<p>
-  <b>Friendly wia:</b>
-  <%=h @war_event.friendly_wia %>
-</p>
-
-<p>
-  <b>Friendly kia:</b>
-  <%=h @war_event.friendly_kia %>
-</p>
-
-<p>
-  <b>Host nation wia:</b>
-  <%=h @war_event.host_nation_wia %>
-</p>
-
-<p>
-  <b>Host nation kia:</b>
-  <%=h @war_event.host_nation_kia %>
-</p>
-
-<p>
-  <b>Civilian wia:</b>
-  <%=h @war_event.civilian_wia %>
-</p>
-
-<p>
-  <b>Civilian kia:</b>
-  <%=h @war_event.civilian_kia %>
-</p>
-
-<p>
-  <b>Enemy wia:</b>
-  <%=h @war_event.enemy_wia %>
-</p>
-
-<p>
-  <b>Enemy kia:</b>
-  <%=h @war_event.enemy_kia %>
-</p>
-
-<p>
-  <b>Enemy detained:</b>
-  <%=h @war_event.enemy_detained %>
-</p>
-
-<p>
-  <b>Date:</b>
-  <%=h @war_event.date %>
-</p>
-
+  <tr>
+    <th>Classification:</th>
+    <td><%=h @war_event.classification %></td>
+  </tr>
+</table>
 
 <%= link_to 'Back', war_events_path %>

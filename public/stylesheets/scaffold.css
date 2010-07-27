@@ -52,12 +52,34 @@ a:hover { color: #fff; background-color:#000; }
   list-style: square;
 }
 
-#war-events-index {
+table {
   border-collapse: collapse;
 }
 
-#war-events-index td {
+td {
   border: solid 1px #ccc;
   padding: 0px 2px 0px 2px;
   padding-left: 2px;
+}
+
+th {
+  text-align: left;
+  border: solid 1px #ccc;
+  padding: 0px 2px 0px 2px;
+  padding-left: 2px;
+}
+
+table.wia_kia td {
+  text-align: right;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+.summary {
+  border: solid 1px #aaa;
+  padding: 0 1em 0 1em;
+  max-width: 60em;
+  margin-bottom: 1em;
 }
