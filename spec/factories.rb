@@ -6,4 +6,5 @@ Factory.sequence( :report_key ) {|n| "report-key-from-factory-#{n}" }
 
 Factory.define :war_event do |c|
   c.report_key { Factory.next :report_key }
+  c.date Time.now
 end
