@@ -5,3 +5,15 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+
+#######
+#
+# This file will be run on every deploy, so make sure the changes here are non-destructive
+#
+#######
+
+Dir[File.join(File.dirname(__FILE__),'seeds','*.rb')].each do |f|
+  puts "Seeding from #{ File.basename f }..."
+  load f
+  puts "Done."
+end

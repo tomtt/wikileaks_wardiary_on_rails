@@ -1,0 +1,1369 @@
+[{
+  "key":"#US",
+  "pattern":"(?!\\d+)US",
+  "value":"# US personnel"
+},{
+  "key":"#V",
+  "pattern":"(?!\\d+)V",
+  "value":"# Vehicles"
+},{
+  "key":"TimeL",
+  "pattern":"(?![\\d:\\.]*)(L|l)",
+  "value":"Local time"
+},{
+  "key":"TimeZ",
+  "pattern":"(?![\\d:\\.]*)(Z|z)",
+  "value":"Zulu time - GMT"
+},{
+  "key":"CDO RM",
+  "pattern":"CDO RM",
+  "value":"42 Commando Royal Marines"
+},{
+  "key":"STB",
+  "pattern":"STB",
+  "value":"508th special troops battalion"
+},{
+  "key":"81",
+  "pattern":"81",
+  "value":"81mm mortar round"
+},{
+  "key":"9-liner",
+  "pattern":"9-liner",
+  "value":"9 Line MEDEVAC Request"
+},{
+  "key":"A/C",
+  "pattern":"(A/C)|(a/c)",
+  "value":"aircraft"
+},{
+  "key":"AAF",
+  "pattern":"AAF",
+  "value":"anti-afghan forces"
+},{
+  "key":"ABP",
+  "pattern":"ABP",
+  "value":"Afghan Border Police"
+},{
+  "key":"AC-130",
+  "pattern":"AC-?130",
+  "value":"Ground attack airplane, adapted from C-130 Hercules transport plane"
+},{
+  "key":"ACK",
+  "pattern":"ACK",
+  "value":"Acknowledge"
+},{
+  "key":"ACM",
+  "pattern":"ACM",
+  "value":"Anti-Coalition Militia"
+},{
+  "key":"AFG",
+  "pattern":"AFG",
+  "value":"Afghans"
+},{
+  "key":"AH-1W",
+  "pattern":"AH-1W",
+  "value":"Attack helicopter 1W - US Marines Super Cobra  gunship"
+},{
+  "key":"AIHRC",
+  "pattern":"AIHRC",
+  "value":"Afghan Independent Human Right Commission"
+},{
+  "key":"AK-47",
+  "pattern":"AK-47",
+  "value":"Assault rifle"
+},{
+  "key":"ANA",
+  "pattern":"ANA",
+  "value":"Afghan National Army"
+},{
+  "key":"ANAP",
+  "pattern":"ANAP",
+  "value":"Afghan National Auxiliary Police"
+},{
+  "key":"ANBP",
+  "pattern":"ANBP",
+  "value":"Afghan National Border Police"
+},{
+  "key":"ANP",
+  "pattern":"ANP",
+  "value":"Afghan National Police"
+},{
+  "key":"ANSF",
+  "pattern":"ANSF",
+  "value":"Afghan National Security Forces"
+},{
+  "key":"AO",
+  "pattern":"AO",
+  "value":"Area of operation"
+},{
+  "key":"AQ",
+  "pattern":"AQ",
+  "value":"Al Qaida"
+},{
+  "key":"ARSIC",
+  "pattern":"ARSIC",
+  "value":"Afghan regional security integrated command"
+},{
+  "key":"ASG",
+  "pattern":"ASG ",
+  "value":"Area Support Group"
+},{
+  "key":"ASV",
+  "pattern":"ASV",
+  "value":"armoured security vehicle"
+},{
+  "key":"ATT",
+  "pattern":"ATT",
+  "value":"At this time"
+},{
+  "key":"ATTK",
+  "pattern":"ATTK",
+  "value":"Attack"
+},{
+  "key":"AUP",
+  "pattern":"AUP",
+  "value":"Afghan uniform police"
+},{
+  "key":"B-HUTS",
+  "pattern":"B-HUTS",
+  "value":"Semi-permanent wooden structures used in place of tents"
+},{
+  "key":"BAF",
+  "pattern":"BAF",
+  "value":"Bagram Air Field"
+},{
+  "key":"BCT",
+  "pattern":"BCT",
+  "value":"Brigade combat team (US)"
+},{
+  "key":"BDA",
+  "pattern":"BDA",
+  "value":"Battle damage assessment"
+},{
+  "key":"BDE",
+  "pattern":"BDE",
+  "value":"Brigade"
+},{
+  "key":"Beaten zone",
+  "pattern":"Beaten zone",
+  "value":"Area where spread of rounds fired"
+},{
+  "key":"BFT",
+  "pattern":"BFT",
+  "value":"Blue Force Tracking: identifying friendly forces in area"
+},{
+  "key":"BG",
+  "pattern":"BG",
+  "value":"Brigadier General"
+},{
+  "key":"Blue forces",
+  "pattern":"Blue forces",
+  "value":"Nato/ISAF forces"
+},{
+  "key":"Blue on Blue",
+  "pattern":"Blue on Blue",
+  "value":"Friendly fire"
+},{
+  "key":"BN",
+  "pattern":"BN",
+  "value":"Battalion"
+},{
+  "key":"BP",
+  "pattern":"BP ",
+  "value":"Blood Pressure"
+},{
+  "key":"BPT",
+  "pattern":"BPT",
+  "value":"Be [ing] prepared to"
+},{
+  "key":"BRF",
+  "pattern":"BRF",
+  "value":"Brigade Reconnaissance Force"
+},{
+  "key":"BSN",
+  "pattern":"BSN",
+  "value":"(Camp) Bastion"
+},{
+  "key":"BSSM",
+  "pattern":"BSSM",
+  "value":"Border Security Subcommittee Meeting"
+},{
+  "key":"BTG",
+  "pattern":"BTG",
+  "value":"Basic target graphic"
+},{
+  "key":"BTIF",
+  "pattern":"BTIF",
+  "value":"Bagram theatre internment facility"
+},{
+  "key":"BTL",
+  "pattern":"BTL",
+  "value":"Battalion"
+},{
+  "key":"buzz saw",
+  "pattern":"buzz saw",
+  "value":"Signalling method by waving light stick in circle"
+},{
+  "key":"C//NF",
+  "pattern":"C//NF",
+  "value":"Confidential, no foreign nationals"
+},{
+  "key":"C/S",
+  "pattern":"C/S",
+  "value":"Call sign"
+},{
+  "key":"CAS",
+  "pattern":"CAS",
+  "value":"Close air support"
+},{
+  "key":"CAT C",
+  "pattern":"CAT C",
+  "value":"Category C patient - priority"
+},{
+  "key":"CCA",
+  "pattern":"CCA",
+  "value":"carrier-controlled approach"
+},{
+  "key":"CCIR",
+  "pattern":"CCIR",
+  "value":"commander's critical information requirements"
+},{
+  "key":"CD",
+  "pattern":"CD",
+  "value":"Command"
+},{
+  "key":"CDN",
+  "pattern":"CDN",
+  "value":"Canadian"
+},{
+  "key":"CDR",
+  "pattern":"CDR",
+  "value":"Commander"
+},{
+  "key":"CF",
+  "pattern":"CF",
+  "value":"Coalition Forces"
+},{
+  "key":"CG",
+  "pattern":"CG",
+  "value":"Coldstream Guards"
+},{
+  "key":"CGBG",
+  "pattern":"CGBG",
+  "value":"Coldstream Guards Battle Group"
+},{
+  "key":"cgbg 1 coy",
+  "pattern":"cgbg 1 coy",
+  "value":"1 company, Coldstream Guards battle group"
+},{
+  "key":"CHOPS",
+  "pattern":"CHOPS",
+  "value":"Chief of Operations"
+},{
+  "key":"CIV",
+  "pattern":"CIV",
+  "value":"Civilian"
+},{
+  "key":"CIVCAS",
+  "pattern":"CIVCAS",
+  "value":"Civilian casualties"
+},{
+  "key":"CJ2",
+  "pattern":"CJ2",
+  "value":"US intelligence and security command, afghanistan"
+},{
+  "key":"CJ3",
+  "pattern":"CJ3",
+  "value":"Combined operations directorate of a joint special operations staff section"
+},{
+  "key":"CJSOTF",
+  "pattern":"CJSOTF",
+  "value":"combined joint special operations task force"
+},{
+  "key":"CJTF",
+  "pattern":"CJTF",
+  "value":"Combined Joint Task Force"
+},{
+  "key":"CJTF-82",
+  "pattern":"CJTF-82",
+  "value":"Combined Joint Task Force-82: HQ of US Forces in ISAF and Regional Command East, March 2007-April 2008"
+},{
+  "key":"CLP",
+  "pattern":"CLP",
+  "value":"Combat logistics patrol [supply convoy]"
+},{
+  "key":"CO",
+  "pattern":"CO ",
+  "value":"Commanding officer"
+},{
+  "key":"CoP",
+  "pattern":"CoP",
+  "value":"Chief of Police"
+},{
+  "key":"COP",
+  "pattern":"COP",
+  "value":"Combat outpost"
+},{
+  "key":"Coy",
+  "pattern":"Coy",
+  "value":"Company"
+},{
+  "key":"CP",
+  "pattern":"CP ",
+  "value":"Check point"
+},{
+  "key":"cpt",
+  "pattern":"cpt",
+  "value":"Captain"
+},{
+  "key":"Csh",
+  "pattern":"Csh",
+  "value":"combat support hospital"
+},{
+  "key":"CTC",
+  "pattern":"CTC",
+  "value":"? counterterrorist center"
+},{
+  "key":"CWIED",
+  "pattern":"CWIED",
+  "value":"Command Wire Improvised Explosive Device"
+},{
+  "key":"DBC",
+  "pattern":"DBC",
+  "value":"database code"
+},{
+  "key":"DC",
+  "pattern":"DC",
+  "value":"District Centre"
+},{
+  "key":"DF",
+  "pattern":"DF",
+  "value":"Direct fire"
+},{
+  "key":"DOI",
+  "pattern":"DOI",
+  "value":"Date of incident"
+},{
+  "key":"DoS",
+  "pattern":"DoS",
+  "value":"Department of State"
+},{
+  "key":"DSHKA",
+  "pattern":"DSHKA",
+  "value":"Soviet-origin heavy machine gun"
+},{
+  "key":"ECP",
+  "pattern":"ECP",
+  "value":"entry control point"
+},{
+  "key":"EKIA",
+  "pattern":"EKIA",
+  "value":"Enemy killed in action"
+},{
+  "key":"Element",
+  "pattern":"Element",
+  "value":"Part of a task force e.g. x22Puma elementx22 = part of Task Force Puma"
+},{
+  "key":"ENG BDE",
+  "pattern":"ENG BDE",
+  "value":"Engineer Brigade"
+},{
+  "key":"EOC",
+  "pattern":"EOC",
+  "value":"Emergency Operation Centre"
+},{
+  "key":"EOD",
+  "pattern":"EOD",
+  "value":"Explosive Ordnance Disposal [bomb defuser]"
+},{
+  "key":"eof",
+  "pattern":"eof",
+  "value":"Escalation of Force [also 'exchange of fire']"
+},{
+  "key":"ETT",
+  "pattern":"ETT",
+  "value":"embedded training team"
+},{
+  "key":"evac",
+  "pattern":"evac",
+  "value":"Evacuation"
+},{
+  "key":"EVACD",
+  "pattern":"EVACD",
+  "value":"Evacuated"
+},{
+  "key":"F-15",
+  "pattern":"F-15",
+  "value":"Fighter /bomber"
+},{
+  "key":"FB",
+  "pattern":"FB",
+  "value":"Forward Base (context -x22Do China FBx22)"
+},{
+  "key":"FF",
+  "pattern":"FF",
+  "value":"Friendly Forces"
+},{
+  "key":"FFIR",
+  "pattern":"FFIR",
+  "value":"Friendly Forces Information Requirement"
+},{
+  "key":"FIR",
+  "pattern":"FIR",
+  "value":"First Impressions Report"
+},{
+  "key":"FO",
+  "pattern":"FO",
+  "value":"Forward observer"
+},{
+  "key":"FOB",
+  "pattern":"FOB",
+  "value":"Forward Operating Base"
+},{
+  "key":"FP",
+  "pattern":"FP",
+  "value":"Firing point"
+},{
+  "key":"fps",
+  "pattern":"fps",
+  "value":"Facility protection service"
+},{
+  "key":"FRA BG",
+  "pattern":"FRA BG",
+  "value":"French battle group"
+},{
+  "key":"FSB",
+  "pattern":"FSB",
+  "value":"Forward Support Base"
+},{
+  "key":"GBU",
+  "pattern":"GBU",
+  "value":"Guided Bomb Unit"
+},{
+  "key":"GBU-12",
+  "pattern":"GBU-12",
+  "value":"500lb laser-guided x22smart bombx22"
+},{
+  "key":"GBU-31",
+  "pattern":"GBU-31",
+  "value":"2,000lb x22smart bomb'"
+},{
+  "key":"GBU-38",
+  "pattern":"GBU-38",
+  "value":"GPS/laser guided 500lb 'smart' bomb"
+},{
+  "key":"GCTF",
+  "pattern":"GCTF",
+  "value":"Global Counter Terrorism  Forces"
+},{
+  "key":"GEN",
+  "pattern":"GEN",
+  "value":"General"
+},{
+  "key":"GHZ",
+  "pattern":"GHZ",
+  "value":"Ghazni"
+},{
+  "key":"GIRoA",
+  "pattern":"GIRoA",
+  "value":"Government of the Islamic Republic of Afghanistan"
+},{
+  "key":"GMLRS",
+  "pattern":"GMLRS",
+  "value":"Multiple rocket launcher"
+},{
+  "key":"Green on green",
+  "pattern":"Green on green",
+  "value":"Fighting between Afghan forces"
+},{
+  "key":"GSW",
+  "pattern":"GSW",
+  "value":"Gunshot wound"
+},{
+  "key":"GT R2RR",
+  "pattern":"GT R2RR",
+  "value":"Canadian troops: tactical group:2nd bn 22nd royal regiment"
+},{
+  "key":"helos",
+  "pattern":"helos",
+  "value":"Helicopters"
+},{
+  "key":"HHB",
+  "pattern":"HHB",
+  "value":"Headquarters and Headquarters Battalion"
+},{
+  "key":"HIMARS",
+  "pattern":"HIMARS",
+  "value":"latest GPS-guided multiple rocket system,  mounted on v. mobile truck [carries GMLRS qv]"
+},{
+  "key":"HLZ",
+  "pattern":"HLZ",
+  "value":"helicopter landing zone"
+},{
+  "key":"HMG",
+  "pattern":"HMG",
+  "value":"UK government (HM Government)"
+},{
+  "key":"HMLA-169",
+  "pattern":"HMLA-169",
+  "value":"US Marines light attack helicopter sqadron"
+},{
+  "key":"HRT",
+  "pattern":"HRT",
+  "value":"hostage rescue team"
+},{
+  "key":"HVI",
+  "pattern":"HVI",
+  "value":"High-value Individual"
+},{
+  "key":"HWY",
+  "pattern":"HWY",
+  "value":"Highway"
+},{
+  "key":"IAW",
+  "pattern":"IAW",
+  "value":"In accordance with"
+},{
+  "key":"IAW EOF SOP",
+  "pattern":"IAW EOF SOP",
+  "value":"in accordance with escalation of force  standard operating procedure"
+},{
+  "key":"ICOM",
+  "pattern":"ICOM",
+  "value":"Radio"
+},{
+  "key":"IDF",
+  "pattern":"IDF",
+  "value":"indirect fire"
+},{
+  "key":"IED",
+  "pattern":"IED",
+  "value":"Improvised explosive device"
+},{
+  "key":"Illum",
+  "pattern":"Illum",
+  "value":"Illumination mortar, fired to provide light"
+},{
+  "key":"INFIL",
+  "pattern":"INFIL",
+  "value":"Infiltrate"
+},{
+  "key":"INS",
+  "pattern":"INS",
+  "value":"Insurgents"
+},{
+  "key":"INTSUM",
+  "pattern":"INTSUM",
+  "value":"Intelligence summary"
+},{
+  "key":"IO",
+  "pattern":"IO",
+  "value":"Information operations"
+},{
+  "key":"IOT",
+  "pattern":"IOT",
+  "value":"In order to"
+},{
+  "key":"IR",
+  "pattern":"IR",
+  "value":"Incident Report"
+},{
+  "key":"ir",
+  "pattern":"ir  ",
+  "value":"infrared"
+},{
+  "key":"IR STROBE",
+  "pattern":"IR STROBE",
+  "value":"Infrared Strobe"
+},{
+  "key":"IRoA",
+  "pattern":"IRoA",
+  "value":"Islamic Republic of Afghanistan"
+},{
+  "key":"IRT",
+  "pattern":"IRT",
+  "value":"Incident Response Team?"
+},{
+  "key":"ISAF",
+  "pattern":"ISAF",
+  "value":"International Security Assistance Force"
+},{
+  "key":"ISN",
+  "pattern":"ISN",
+  "value":"Internment [or Insurgent] serial Number"
+},{
+  "key":"ISO",
+  "pattern":"ISO",
+  "value":"In support of"
+},{
+  "key":"ISR",
+  "pattern":"ISR",
+  "value":"Intelligence, surveillance and reconnaissance"
+},{
+  "key":"IVO",
+  "pattern":"IVO",
+  "value":"In vicinity of"
+},{
+  "key":"J COY 42 CDO",
+  "pattern":"J COY 42 CDO",
+  "value":"J company 42 Commando Royal Marines"
+},{
+  "key":"JAF",
+  "pattern":"JAF",
+  "value":"Jalalabad Air Field"
+},{
+  "key":"JAG",
+  "pattern":"JAG",
+  "value":"Judge Advocate General (Army legal team)"
+},{
+  "key":"JBAD",
+  "pattern":"JBAD",
+  "value":"Jalalabad"
+},{
+  "key":"JDAM",
+  "pattern":"JDAM",
+  "value":"Joint Direct Attack Munition"
+},{
+  "key":"JDCC",
+  "pattern":"JDCC",
+  "value":"Joint District Coordination Center"
+},{
+  "key":"JDOC",
+  "pattern":"JDOC",
+  "value":"Joint Defense Operations Center"
+},{
+  "key":"JEL",
+  "pattern":"JEL",
+  "value":"Joint Effects List [hit list]"
+},{
+  "key":"Jingle trucks",
+  "pattern":"Jingle trucks",
+  "value":"Brightly decorated trucks covered in bells common across central Asia"
+},{
+  "key":"JOC",
+  "pattern":"JOC",
+  "value":"joint ops centre"
+},{
+  "key":"JPEL",
+  "pattern":"JPEL",
+  "value":"Joint Prioritised Effects List [hit list]"
+},{
+  "key":"JTAC",
+  "pattern":"JTAC",
+  "value":"Joint terminal air controller"
+},{
+  "key":"JUGROOM",
+  "pattern":"JUGROOM",
+  "value":"Fort, Garmsir, Afghanistan"
+},{
+  "key":"KAF",
+  "pattern":"KAF",
+  "value":"Kandahar Air Field"
+},{
+  "key":"KAIA",
+  "pattern":"KAIA",
+  "value":"Kabul international airport"
+},{
+  "key":"KDZ",
+  "pattern":"KDZ",
+  "value":"Kunduz"
+},{
+  "key":"KIA",
+  "pattern":"KIA",
+  "value":"Killed in action"
+},{
+  "key":"KJI",
+  "pattern":"KJI",
+  "value":"Kajaki"
+},{
+  "key":"KMTC",
+  "pattern":"KMTC",
+  "value":"Kabul military training cetnre"
+},{
+  "key":"KPRT",
+  "pattern":"KPRT",
+  "value":"Kandahar Provincial Reconstruction Team"
+},{
+  "key":"L:",
+  "pattern":"L:",
+  "value":"Location (in relation to S, A, L, T)"
+},{
+  "key":"LEP",
+  "pattern":"LEP",
+  "value":"Law Enforcement Professionals"
+},{
+  "key":"Line 1",
+  "pattern":"Line 1",
+  "value":"Location of the pick-up site."
+},{
+  "key":"Line 2",
+  "pattern":"Line 2",
+  "value":"Radio frequency, call sign, and suffix."
+},{
+  "key":"Line 3",
+  "pattern":"Line 3",
+  "value":"Number of patients by precedence: A to E with A being most urgent"
+},{
+  "key":"Line 4",
+  "pattern":"Line 4",
+  "value":"Special equipment required"
+},{
+  "key":"Litter",
+  "pattern":"Litter",
+  "value":"Stretcher used by medics"
+},{
+  "key":"LKG",
+  "pattern":"LKG",
+  "value":"Lashkar Ghar"
+},{
+  "key":"LN",
+  "pattern":"LN",
+  "value":"Local national"
+},{
+  "key":"LNO",
+  "pattern":"LNO",
+  "value":"Liaison Officer"
+},{
+  "key":"LTC",
+  "pattern":"LTC",
+  "value":"Lieutenant Colonel"
+},{
+  "key":"Luna",
+  "pattern":"Luna",
+  "value":"German drone"
+},{
+  "key":"LZ",
+  "pattern":"LZ",
+  "value":"Landing Zone"
+},{
+  "key":"m240b",
+  "pattern":"m240b",
+  "value":"Type of machine gun"
+},{
+  "key":"M249",
+  "pattern":"M249",
+  "value":"light machine gun"
+},{
+  "key":"M4/M-4",
+  "pattern":"M4/M-4",
+  "value":"Type of gun"
+},{
+  "key":"MAJ",
+  "pattern":"MAJ",
+  "value":"Major"
+},{
+  "key":"MAR",
+  "pattern":"MAR",
+  "value":"Marine"
+},{
+  "key":"MED OPS",
+  "pattern":"MED OPS",
+  "value":"Medical Operations"
+},{
+  "key":"MED TM",
+  "pattern":"MED TM",
+  "value":"Medical Team"
+},{
+  "key":"medevac",
+  "pattern":"medevac",
+  "value":"Medical evacuation"
+},{
+  "key":"MEY PRT",
+  "pattern":"MEY PRT",
+  "value":"Meymaneh provincial reconstruction team"
+},{
+  "key":"MG",
+  "pattern":"MG",
+  "value":"Machine Gun"
+},{
+  "key":"MHL",
+  "pattern":"MHL",
+  "value":"Mehtar Lam"
+},{
+  "key":"MM",
+  "pattern":"MM",
+  "value":"Military Message"
+},{
+  "key":"MOD",
+  "pattern":"MOD",
+  "value":"Ministry of Defence"
+},{
+  "key":"MOI",
+  "pattern":"MOI",
+  "value":"Afghanistan's Ministry of Interior"
+},{
+  "key":"MP",
+  "pattern":"MP",
+  "value":"Military Police"
+},{
+  "key":"MS",
+  "pattern":"MS",
+  "value":"Military support"
+},{
+  "key":"MSN",
+  "pattern":"MSN",
+  "value":"Nurse (with a masters)"
+},{
+  "key":"Msr",
+  "pattern":"Msr",
+  "value":"main supply route"
+},{
+  "key":"MTF",
+  "pattern":"MTF",
+  "value":"More to follow"
+},{
+  "key":"MTT",
+  "pattern":"MTT",
+  "value":"military training team"
+},{
+  "key":"N/I C",
+  "pattern":"N/I C",
+  "value":"Nato/ISAF Confidential"
+},{
+  "key":"NAI",
+  "pattern":"NAI",
+  "value":"Named areas of interest"
+},{
+  "key":"NC",
+  "pattern":"NC",
+  "value":"non-combatant"
+},{
+  "key":"NCO",
+  "pattern":"NCO",
+  "value":"Non-commissioned officer"
+},{
+  "key":"NDS",
+  "pattern":"NDS",
+  "value":"Afghan intelligence [national directorate of security]"
+},{
+  "key":"NFI",
+  "pattern":"NFI",
+  "value":"Not Further Identified"
+},{
+  "key":"NFTR",
+  "pattern":"NFTR",
+  "value":"Nothing further to report"
+},{
+  "key":"NMC",
+  "pattern":"NMC",
+  "value":"non mission-capable"
+},{
+  "key":"NOFORN",
+  "pattern":"NOFORN",
+  "value":"no foreigners [secrecy classification]"
+},{
+  "key":"NSTR",
+  "pattern":"NSTR",
+  "value":"Nothing significant to report"
+},{
+  "key":"OBJ",
+  "pattern":"OBJ",
+  "value":"Objective"
+},{
+  "key":"OC",
+  "pattern":"OC",
+  "value":"Outcome"
+},{
+  "key":"OCC- P",
+  "pattern":"OCC- P",
+  "value":"operational command centre - provincial"
+},{
+  "key":"OCCD",
+  "pattern":"OCCD",
+  "value":"Operational Coordination Center District"
+},{
+  "key":"ODA",
+  "pattern":"ODA",
+  "value":"Operational Detachment (Alpha) - special forces"
+},{
+  "key":"OGA",
+  "pattern":"OGA",
+  "value":"Other Government Agency (usually CIA)"
+},{
+  "key":"OIC",
+  "pattern":"OIC",
+  "value":"Officer in charge"
+},{
+  "key":"OMF",
+  "pattern":"OMF",
+  "value":"Opposing Militant Forces"
+},{
+  "key":"Op",
+  "pattern":"Op",
+  "value":"Operation"
+},{
+  "key":"OP",
+  "pattern":"OP",
+  "value":"Observation Post"
+},{
+  "key":"OP grid",
+  "pattern":"OP grid",
+  "value":"Operation/Observation post map coordinates"
+},{
+  "key":"OPSUM",
+  "pattern":"OPSUM",
+  "value":"Operations Summary"
+},{
+  "key":"ORSA",
+  "pattern":"ORSA",
+  "value":"operations research and systems analysis"
+},{
+  "key":"PA",
+  "pattern":"PA",
+  "value":"Physician Assistant"
+},{
+  "key":"PAK",
+  "pattern":"PAK",
+  "value":"Pakistan"
+},{
+  "key":"PAKMIL",
+  "pattern":"PAKMIL",
+  "value":"Pakistan military"
+},{
+  "key":"PAO",
+  "pattern":"PAO",
+  "value":"Public Affairs Officer"
+},{
+  "key":"PAX",
+  "pattern":"PAX",
+  "value":"Passengers/People"
+},{
+  "key":"PB",
+  "pattern":"PB ",
+  "value":"Patrol Base"
+},{
+  "key":"PBG",
+  "pattern":"PBG",
+  "value":"Polish battle group"
+},{
+  "key":"PEF",
+  "pattern":"PEF",
+  "value":"poppy eradication force [afghan police]"
+},{
+  "key":"PEN",
+  "pattern":"PEN",
+  "value":"Penich (outpost)"
+},{
+  "key":"PHQ",
+  "pattern":"PHQ",
+  "value":"Police headquarters (in reference to ANP)"
+},{
+  "key":"PID",
+  "pattern":"PID",
+  "value":"positive i.d."
+},{
+  "key":"PKM",
+  "pattern":"PKM",
+  "value":"Russian-made machine gun"
+},{
+  "key":"PL",
+  "pattern":"PL",
+  "value":"Platoon"
+},{
+  "key":"PLT",
+  "pattern":"PLT ",
+  "value":"Platoon"
+},{
+  "key":"PLT SJT",
+  "pattern":"PLT SJT",
+  "value":"Platoon Seargant"
+},{
+  "key":"PMT",
+  "pattern":"PMT",
+  "value":"Police Mentor Team"
+},{
+  "key":"PoA",
+  "pattern":"PoA",
+  "value":"President of Afghanistan"
+},{
+  "key":"poc",
+  "pattern":"poc",
+  "value":"point of contact"
+},{
+  "key":"POI",
+  "pattern":"POI",
+  "value":"point of impact"
+},{
+  "key":"POO",
+  "pattern":"POO",
+  "value":"point of origin"
+},{
+  "key":"PRED",
+  "pattern":"PRED",
+  "value":"Predator drone"
+},{
+  "key":"PRO COY",
+  "pattern":"PRO COY",
+  "value":"protection company"
+},{
+  "key":"PRT",
+  "pattern":"PRT ",
+  "value":"Provincial Reconstruction Team"
+},{
+  "key":"PRT CDR",
+  "pattern":"PRT CDR",
+  "value":"Provincial Reconstruction Team Commander"
+},{
+  "key":"PSO",
+  "pattern":"PSO",
+  "value":"Post Security Officer"
+},{
+  "key":"PT",
+  "pattern":"PT",
+  "value":"Patient"
+},{
+  "key":"PTS",
+  "pattern":"PTS",
+  "value":"Peace Through Strength (PTS) reconciliation process"
+},{
+  "key":"QRF",
+  "pattern":"QRF",
+  "value":"Quick Response Force"
+},{
+  "key":"RB",
+  "pattern":"RB",
+  "value":"Road block"
+},{
+  "key":"RC N",
+  "pattern":"RC \\(N\\)",
+  "value":"Regional Command North"
+},{
+  "key":"RC CENTRAL",
+  "pattern":"RC CENTRAL",
+  "value":"Regional Command Central"
+},{
+  "key":"RC E",
+  "pattern":"(RC\\(E\\))|(RC East)",
+  "value":"Regional Command East"
+},{
+  "key":"RC W",
+  "pattern":"RC\\(W\\)",
+  "value":"Regional Command West"
+},{
+  "key":"RC S",
+  "pattern":"(RC=S)|(RC\\(S\\))",
+  "value":"Regional Command South"
+},{
+  "key":"RCAG",
+  "pattern":"RCAG",
+  "value":"Regional Corps Assistance Group"
+},{
+  "key":"RCC",
+  "pattern":"(RCC)|(RC\\(C\\))",
+  "value":"Regional Command Capital"
+},{
+  "key":"RCP",
+  "pattern":"RCP",
+  "value":"Route clearance Patrol"
+},{
+  "key":"rds/RDS",
+  "pattern":"(rds)|(RDS)",
+  "value":"Rounds"
+},{
+  "key":"rfs",
+  "pattern":"rfs",
+  "value":"Resident Field Squadron"
+},{
+  "key":"RG",
+  "pattern":"RG",
+  "value":"US armoured vehicle"
+},{
+  "key":"RGR",
+  "pattern":"RGR",
+  "value":"Royal Gurkha rifles"
+},{
+  "key":"ROE",
+  "pattern":"ROE",
+  "value":"Rules of engagement"
+},{
+  "key":"Role 3",
+  "pattern":"Role 3",
+  "value":"Surgical facility"
+},{
+  "key":"RPG",
+  "pattern":"RPG",
+  "value":"Rocket propelled grenade"
+},{
+  "key":"RPK",
+  "pattern":"RPK",
+  "value":"Light machine gun, Kalashnikov (Ruchnoi Pulemyot Kalashnikova)"
+},{
+  "key":"RPT",
+  "pattern":"RPT",
+  "value":"Report"
+},{
+  "key":"RTB",
+  "pattern":"RTB",
+  "value":"Return to base"
+},{
+  "key":"RTE",
+  "pattern":"RTE",
+  "value":"Route"
+},{
+  "key":"RTF",
+  "pattern":"RTF",
+  "value":"Reconstruction Task Force [Australian at TF Uruzgan]"
+},{
+  "key":"S-2",
+  "pattern":"S-2",
+  "value":"Intelligence staff officer"
+},{
+  "key":"S-5",
+  "pattern":"S-5",
+  "value":"Staff member responsible for civil-military operations"
+},{
+  "key":"S, A, L, T",
+  "pattern":"S, A, L, T",
+  "value":"Size, Activity, Location, Time (military report)"
+},{
+  "key":"S, A, L, T, U, R",
+  "pattern":"S, A, L, T, U, R",
+  "value":"Size, Activity, Location, Time, Unit, Result (military report)"
+},{
+  "key":"S:",
+  "pattern":"S:",
+  "value":"Size (in relation to S, A, L, T)"
+},{
+  "key":"S//REL",
+  "pattern":"S//REL",
+  "value":"Secret or Selective release? (context - x22S//REL TO USA, AFG, GCTF, ISAF, NATOx22)"
+},{
+  "key":"SAF/Safire",
+  "pattern":"SAF/Safire",
+  "value":"Small ams fire/Surface to air fire"
+},{
+  "key":"SAW",
+  "pattern":"SAW",
+  "value":"Squad Automatic Weapon [ machine gun]"
+},{
+  "key":"SC-26",
+  "pattern":"SC-26",
+  "value":"Scorpion 26 - US special forces unit in Helmand"
+},{
+  "key":"SCIDA",
+  "pattern":"SCIDA",
+  "value":"Site Configuration and Installation Design Authority?"
+},{
+  "key":"SEWOC",
+  "pattern":"SEWOC",
+  "value":"Sigint Electronic Warfare Operational Centre"
+},{
+  "key":"SFG",
+  "pattern":"SFG",
+  "value":"special forces group"
+},{
+  "key":"Shura",
+  "pattern":"Shura",
+  "value":"Meeting of tribal elders and Afghan leaders"
+},{
+  "key":"SIED",
+  "pattern":"SIED",
+  "value":"Suicide IED"
+},{
+  "key":"SIGACT",
+  "pattern":"SIGACT",
+  "value":"Significant activity"
+},{
+  "key":"SIR",
+  "pattern":"SIR",
+  "value":"Serious Incident Report"
+},{
+  "key":"sof",
+  "pattern":"sof",
+  "value":"Special ops force"
+},{
+  "key":"SOG",
+  "pattern":"SOG",
+  "value":"Special ops group"
+},{
+  "key":"Solatia",
+  "pattern":"Solatia",
+  "value":"Payments to civilian victims of US attacks (or their families)"
+},{
+  "key":"SOP",
+  "pattern":"SOP",
+  "value":"Standard Operating Procedure"
+},{
+  "key":"SOTF",
+  "pattern":"SOTF",
+  "value":"Special Operations Task Force"
+},{
+  "key":"SOTG",
+  "pattern":"SOTG",
+  "value":"Special ops taskgroup"
+},{
+  "key":"SPC",
+  "pattern":"SPC",
+  "value":"Specialist"
+},{
+  "key":"SQD",
+  "pattern":"SQD",
+  "value":"Squadron"
+},{
+  "key":"sqn",
+  "pattern":"sqn",
+  "value":"Squadron"
+},{
+  "key":"Squirter",
+  "pattern":"Squirter",
+  "value":"Someone running for cover"
+},{
+  "key":"SSE",
+  "pattern":"SSE",
+  "value":"Sensitive site exploitation"
+},{
+  "key":"SVBIED",
+  "pattern":"SVBIED",
+  "value":"suicide vehicle-borne IED"
+},{
+  "key":"SWO",
+  "pattern":"SWO",
+  "value":"Surface warfare officer"
+},{
+  "key":"SWT",
+  "pattern":"SWT",
+  "value":"Scout weapons team"
+},{
+  "key":"T:",
+  "pattern":"T:",
+  "value":"Time (in relation to S, A, L, T)"
+},{
+  "key":"TB",
+  "pattern":"TB",
+  "value":"Taliban"
+},{
+  "key":"TBC",
+  "pattern":"TBC",
+  "value":"To be confirmed"
+},{
+  "key":"TBD",
+  "pattern":"TBD",
+  "value":"To be decided"
+},{
+  "key":"TCP",
+  "pattern":"TCP",
+  "value":"Traffic control  point"
+},{
+  "key":"TERP",
+  "pattern":"TERP|terp",
+  "value":"Interpreter"
+},{
+  "key":"TERPS",
+  "pattern":"TERP(S|s)|terps",
+  "value":"Interpreters"
+},{
+  "key":"TF",
+  "pattern":"TF",
+  "value":"Task force"
+},{
+  "key":"TF373",
+  "pattern":"TF373",
+  "value":"task force 373 [special ops]"
+},{
+  "key":"TFK",
+  "pattern":"TFK",
+  "value":"Task Force Kandahar"
+},{
+  "key":"TG",
+  "pattern":"TG",
+  "value":"Tactical Group"
+},{
+  "key":"TG AREs",
+  "pattern":"TG AREs",
+  "value":"Tactical group Ares"
+},{
+  "key":"Thready",
+  "pattern":"Thready",
+  "value":"Pulse that is very fine and scarcely perceptible."
+},{
+  "key":"TIC",
+  "pattern":"TIC",
+  "value":"Troops in contact"
+},{
+  "key":"Toc",
+  "pattern":"Toc",
+  "value":"tactical op center"
+},{
+  "key":"TTPs",
+  "pattern":"TTPs",
+  "value":"tactics, techniques, and procedures"
+},{
+  "key":"UAH",
+  "pattern":"UAH",
+  "value":"Up-armoured Humvee"
+},{
+  "key":"UAV",
+  "pattern":"UAV",
+  "value":"Unmanned aerial vehicle [drone]"
+},{
+  "key":"UH-1N",
+  "pattern":"UH-1N",
+  "value":"US Twin Huey transport/communications helicopter"
+},{
+  "key":"UH-60",
+  "pattern":"UH-60",
+  "value":"Black Hawk helicopter"
+},{
+  "key":"UNAMA",
+  "pattern":"UNAMA",
+  "value":"United Nations Assistance Mission in Afghanistan"
+},{
+  "key":"UNK",
+  "pattern":"UNK",
+  "value":"Unknown"
+},{
+  "key":"usfor-a",
+  "pattern":"usfor-a",
+  "value":"United States Forces Afghanistan"
+},{
+  "key":"UXO",
+  "pattern":"UXO",
+  "value":"unexploded ordnance [or unfired]"
+},{
+  "key":"VBIED",
+  "pattern":"VBIED",
+  "value":"VBIED vehicle-borne improvised explosive device"
+},{
+  "key":"VCP",
+  "pattern":"VCP",
+  "value":"Vehicle Check Point"
+},{
+  "key":"vic",
+  "pattern":"vic",
+  "value":"vicinity"
+},{
+  "key":"VIC",
+  "pattern":"VIC",
+  "value":"Vehicle? (context - x22ANP officer hit ANA officer with door of VIC...7 to 8 rounds struck ANP VICx22)"
+},{
+  "key":"vitals",
+  "pattern":"vitals",
+  "value":"Vital signs (for example blood pressure)"
+},{
+  "key":"VP",
+  "pattern":"VP",
+  "value":"Vulnerable point"
+},{
+  "key":"VPB",
+  "pattern":"VPB",
+  "value":"Vehicle patrol base"
+},{
+  "key":"VSA",
+  "pattern":"VSA",
+  "value":"vital signs absent [i.e. dead]"
+},{
+  "key":"w/d",
+  "pattern":"w/d",
+  "value":"wheels down"
+},{
+  "key":"w/u",
+  "pattern":"w/u",
+  "value":"wheels up"
+},{
+  "key":"White Eagle",
+  "pattern":"White Eagle",
+  "value":"Polish task force"
+},{
+  "key":"WIA",
+  "pattern":"WIA|wia",
+  "value":"Wounded in action"
+}]
