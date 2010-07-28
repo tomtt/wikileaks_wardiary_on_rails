@@ -13,6 +13,8 @@ You can find a working release of this app at http://war-logs-on-rails.com
 * rake db:create:all
 * rake:db:migrate
 * rake db:seed (this loads some of the metadata)
+* rake wardiary:term_definitions:retag_war_events (this tags all the war events with the terms currently
+  defined in the system. Beware: it takes a long time (minutes) to run this task)
 
 The import will currently not work on systems that do not support 'piping' data to another process. If you
 can think of an efficient way to import the compressed data on these systems (i.e. windows) please submit
