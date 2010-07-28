@@ -8,3 +8,10 @@ Factory.define :war_event do |c|
   c.report_key { Factory.next :report_key }
   c.date Time.now
 end
+
+Factory.sequence( :term ) {|n| "term-from-factory-#{n}" }
+
+Factory.define :term_definition do |c|
+  c.term { Factory.next :term }
+  c.definition "Definition from factory"
+end

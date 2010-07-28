@@ -9,7 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100726233226) do
+ActiveRecord::Schema.define(:version => 20100727181305) do
+
+  create_table "term_definitions", :force => true do |t|
+    t.string   "term",       :null => false
+    t.string   "pattern"
+    t.text     "definition", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "term_definitions", ["term"], :name => "index_term_definitions_on_term", :unique => true
 
   create_table "war_events", :force => true do |t|
     t.string   "report_key",       :null => false
