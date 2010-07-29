@@ -1,0 +1,47 @@
+<p><%= page_entries_info war_events, :entry_name => "tagged events" %></p>
+<table id="war-events-index">
+  <tr>
+    <th colspan="3"></th>
+    <th colspan="2">Friendly</th>
+    <th colspan="2">Host Nation</th>
+    <th colspan="2">Civilian</th>
+    <th colspan="2">Enemy</th>
+    <th colspan="1"></th>
+  <tr>
+    <th>Type of event</th>
+    <th>Category</th>
+    <th>Region</th>
+    <th>WIA</TH>
+    <th>KIA</TH>
+    <th>WIA</TH>
+    <th>KIA</TH>
+    <th>WIA</TH>
+    <th>KIA</TH>
+    <th>WIA</TH>
+    <th>KIA</TH>
+    <th>Date</th>
+  </tr>
+
+<% war_events.each do |war_event| %>
+  <tr>
+    <td><%=h war_event.type_of_event %></td>
+    <td><%=h war_event.category %></td>
+    <td><%=h war_event.region %></td>
+
+    <td><%=h war_event.friendly_wia %></td>
+    <td><%=h war_event.friendly_kia %></td>
+    <td><%=h war_event.host_nation_wia %></td>
+    <td><%=h war_event.host_nation_kia %></td>
+    <td><%=h war_event.civilian_wia %></td>
+    <td><%=h war_event.civilian_kia %></td>
+    <td><%=h war_event.enemy_wia %></td>
+    <td><%=h war_event.enemy_kia %></td>
+
+    <td><%=h war_event.date.to_s(:concise) %></td>
+    <td><%= link_to 'Show', war_event_path(war_event) %></td>
+  </tr>
+<% end %>
+</table>
+<br/>
+
+<%= will_paginate war_events %>
