@@ -26,12 +26,7 @@ namespace :wardiary do
 
     desc "Tag all the war events with the terms that appear in them (can take hours)"
     task :tag_war_events => :environment do
-      puts "Updating all term tags for all 76911 war events, each \".\" is 100 events processed (can take 3 hours on a fast machine)"
-      STDOUT.sync = true
-      WarEvent.all.each_with_index do |war_event, count|
-        print "." if count % 100 == 99
-        war_event.tag_with_available_terms
-      end
+      WarEvent.tag_all_with_all_terms!
     end
   end
 end
