@@ -1,6 +1,3 @@
-require 'pp'
-require 'ruby-debug'
-
 namespace :wardiary do
   namespace :data do
     desc "Import original wikileaks data"

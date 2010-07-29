@@ -1,0 +1,5 @@
+<ul>
+  <%- resources.each do |tag| %>
+    <li><%= link_to(h(tag), term_tag_path(tag)) %></li>
+  <%- end -%>
+</ul>      
