@@ -1,2 +1,3 @@
 <h1>Events tagged with "<%=h resource.name %>"</h1>
+<p class="definition"><%=h resource.name %>: <%=h @definition %></p>
 <%= render(:partial => "shared/war_events_table", :locals => { :war_events => @war_events }) %>

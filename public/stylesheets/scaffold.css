@@ -90,3 +90,9 @@ table.glossary {
   float: right;
   width: 400px;
 }
+
+.definition {
+  border: solid 1px #ccc;
+  max-width: 800px;
+  padding: 2px 2px 2px 4px;
+}
