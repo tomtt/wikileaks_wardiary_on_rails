@@ -1,3 +1,19 @@
-<% tag_cloud(tags, %w(css1 css2 css3 css4)) do |tag, css_class| %>
-  <%= link_to term_tag_path(tag.cached_slug), { :action => :tag, :id => tag.name }, :class => css_class %>
-<% end %>
+<div id="tag_cloud">
+  <div>Tag cloud (military terms used in cables):</div>
+  <%= tags[0,150].sort{|a,b| a[0] <=> b[0] }.map do |tag|
+   count = tag[1]
+   if count > 10000
+     css_class = "css4"
+   elsif count > 6000
+     css_class = "css3"
+   elsif count > 3000
+     css_class = "css2"
+   else
+     css_class = "css1"
+   end
+
+    link_to h(tag[0] + " "), "/term_tags/#{tag[2]}", :class => css_class
+  end
+
+  %>
+</div>

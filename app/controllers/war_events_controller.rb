@@ -2,7 +2,7 @@ class WarEventsController < ApplicationController
   resources_controller_for :war_events, :only => [:index, :show]
 
   def index
-    @term_tags = resource_service.tag_counts_on(:terms)
+    super
   end
 
   def show

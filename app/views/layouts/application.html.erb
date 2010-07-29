@@ -27,6 +27,8 @@
 
 <%= yield %>
 
+<%= render(:partial => "shared/tag_cloud", :locals => { :tags => @term_tags_for_cloud }) %>
+
 <div class="footer">
   <span class="source_attribution">Source: <%= link_to("http://wardiary.wikileaks.org/", "http://wardiary.wikileaks.org/") %></span>
   <span class="repository">Code: <%= link_to("http://github.com/tomtt/wikileaks_wardiary_on_rails", "http://github.com/tomtt/wikileaks_wardiary_on_rails") %></span>
