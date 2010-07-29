@@ -32,6 +32,12 @@ class WarEvent < ActiveRecord::Base
     save
   end
 
+  def self.find_all_by_search_pattern!(pattern)
+    # This query is MySQL specific and not checking for sql injection.
+    sql = "select * from war_events where concat(summary, ' ', title, ' ', ccir, ' ', category) regexp '[[:<:]](#{pattern})[[:>:]]'"
+    find_by_sql(sql)
+  end
+
   private
 
   def searchable_text

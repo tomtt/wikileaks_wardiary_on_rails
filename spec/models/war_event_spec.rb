@@ -141,4 +141,58 @@ describe WarEvent do
       end
     end
   end
+
+  describe "find_all_by_search_pattern" do
+    it "returns only those war events matching the pattern" do
+      # The only acceptably efficient way to do this was a MySQL monster, so the test
+      # is a bit crude
+      we1 = Factory.create(:war_event,
+                           :summary => "foo",
+                           :title => "",
+                           :ccir => "",
+                           :category => "")
+      we2 = Factory.create(:war_event,
+                           :summary => "",
+                           :title => "foo",
+                           :ccir => "",
+                           :category => "")
+      we3 = Factory.create(:war_event,
+                           :summary => "fool",
+                           :title => "",
+                           :ccir => "",
+                           :category => "")
+      we4 = Factory.create(:war_event,
+                           :summary => "",
+                           :title => "snafoo",
+                           :ccir => "",
+                           :category => "")
+      we5 = Factory.create(:war_event,
+                           :summary => "fool fo",
+                           :title => "o snafoo",
+                           :ccir => "",
+                           :category => "")
+      we6 = Factory.create(:war_event,
+                           :summary => "",
+                           :title => "",
+                           :ccir => "foo",
+                           :category => "")
+      we7 = Factory.create(:war_event,
+                           :summary => "",
+                           :title => "",
+                           :category => "foo",
+                           :ccir => "")
+      we8 = Factory.create(:war_event,
+                           :summary => "there's no business like FOO business",
+                           :title => "",
+                           :ccir => "",
+                           :category => "")
+      matches = WarEvent.find_all_by_search_pattern!("FOO|foo")
+      matches.size.should == 5
+      matches.should include(we1, we2, we6, we7, we8)
+    end
+
+    it "should work for other databases than MySQL" do
+      pending 'Currently only implemented as a MySQL sql atrocity'
+    end
+  end
 end
