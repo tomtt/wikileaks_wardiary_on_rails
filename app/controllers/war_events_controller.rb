@@ -14,6 +14,9 @@ class WarEventsController < ApplicationController
   # GET /war_events/1.xml
   def show
     @war_event = WarEvent.find_by_report_key(params[:id])
+    @term_list = @war_event.term_list
+    @tags = @term_list.map { |t| ActsAsTaggableOn::Tag.find_by_name(t) }
+    @term_definitions = @term_list.map { |t| TermDefinition.find_by_term(t) }
 
     respond_to do |format|
       format.html # show.html.erb

@@ -57,6 +57,7 @@ table {
 }
 
 td {
+  vertical-align: top;
   border: solid 1px #ccc;
   padding: 0px 2px 0px 2px;
   padding-left: 2px;
@@ -64,6 +65,7 @@ td {
 
 th {
   text-align: left;
+  vertical-align: top;
   border: solid 1px #ccc;
   padding: 0px 2px 0px 2px;
   padding-left: 2px;
@@ -82,4 +84,9 @@ h1 {
   padding: 0 1em 0 1em;
   max-width: 60em;
   margin-bottom: 1em;
+}
+
+table.glossary {
+  float: right;
+  width: 400px;
 }

@@ -1,5 +1,13 @@
 <h1><%=h @war_event.title %></h1>
 
+<table class="glossary">
+  <tr><th colspan="2">Glossary</th></tr>
+  <tr><th>Term</th><th>Definition</th></tr>
+  <%- @term_definitions.each do |term_definition| -%>
+    <tr><td><%= h term_definition.term %></td><td><%=h term_definition.definition %></td></tr>
+  <%- end -%>
+</table>
+
 <div class="summary">
   <p>
     <b>Summary:</b>
@@ -118,3 +126,9 @@
     <td><%=h @war_event.classification %></td>
   </tr>
 </table>
+
+<p>Links to events that also have tag:
+<%- @tags.each do |tag| -%>
+  <%= link_to(h(tag.name), term_tag_path(tag)) %>
+<%- end -%>
+</p>
