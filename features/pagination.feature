@@ -14,6 +14,7 @@ Feature: pagination
     And I should see "war event 60"
     And I should not see "war event 61"
 
+  @wip
   Scenario: Viewing multiple events on page 2
     When I go to the home page
     And I follow "2"
