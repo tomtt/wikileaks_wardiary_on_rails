@@ -1,0 +1,2 @@
+class TermTagsController < ApplicationController
+end
