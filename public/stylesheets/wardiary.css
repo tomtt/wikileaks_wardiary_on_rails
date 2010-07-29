@@ -98,12 +98,15 @@ table.glossary {
 }
 
 .footer {
-    margin: 10px;
-    border-top: solid 1px #fcc;
+  margin: 10px;
+  border-top: solid 1px #fcc;
+  font-size: smaller;
 }
 
-.footer {
-    font-size: smaller;
+.header {
+  margin: 10px;
+  border-bottom: solid 1px #fcc;
+  text-align: right;
 }
 
 .repository {
