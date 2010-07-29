@@ -82,13 +82,13 @@ h1 {
 .summary {
   border: solid 1px #aaa;
   padding: 0 1em 0 1em;
-  max-width: 60em;
+  width: 64%;
   margin-bottom: 1em;
 }
 
 table.glossary {
   float: right;
-  width: 400px;
+  width: 30%;
 }
 
 .definition {
@@ -102,6 +102,10 @@ table.glossary {
     border-top: solid 1px #fcc;
 }
 
-.footer .source_attribution {
+.footer {
     font-size: smaller;
+}
+
+.repository {
+    float: right;
 }
