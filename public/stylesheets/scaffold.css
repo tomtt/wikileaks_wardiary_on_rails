@@ -96,3 +96,12 @@ table.glossary {
   max-width: 800px;
   padding: 2px 2px 2px 4px;
 }
+
+.footer {
+    margin: 10px;
+    border-top: solid 1px #fcc;
+}
+
+.footer .source_attribution {
+    font-size: smaller;
+}
