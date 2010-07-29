@@ -21,6 +21,7 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem 'will_paginate'
   config.gem 'acts-as-taggable-on'
+  config.gem 'friendly_id'
 
   if %w(development test cucumber).include?(RAILS_ENV)
     config.gem 'rspec', :lib => false
