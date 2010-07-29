@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100728100959) do
+ActiveRecord::Schema.define(:version => 20100729031724) do
 
   create_table "taggings", :force => true do |t|
     t.integer  "tag_id"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20100728100959) do
 
   create_table "tags", :force => true do |t|
     t.string "name"
+    t.string "cached_slug"
   end
 
   create_table "term_definitions", :force => true do |t|
