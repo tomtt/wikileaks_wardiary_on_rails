@@ -10,7 +10,10 @@ class ApplicationController < ActionController::Base
 
   before_filter :load_cloud_tag
 
+  private
+
   def load_cloud_tag
+    @show_tag_cloud = true
     @term_tags_for_cloud = JSON.parse(@@term_tag_count_json)
   end
 

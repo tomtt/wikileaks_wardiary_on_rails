@@ -106,6 +106,9 @@ table.glossary {
 .header {
   margin: 10px;
   border-bottom: solid 1px #fcc;
+}
+
+#site_info {
   text-align: right;
 }
 
@@ -123,4 +126,17 @@ table.glossary {
   align: right;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#nav_links li {
+  display: inline;
+  list-style-type: none;
+}
+
+.total {
+  font-weight: bold;
+}
+
+table.number_data td {
+  text-align: right;
 }

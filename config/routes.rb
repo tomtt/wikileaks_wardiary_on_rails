@@ -3,5 +3,8 @@ ActionController::Routing::Routes.draw do |map|
     term_tags.resources :war_events
   end
   map.resources :war_events
+
   map.root :controller => "war_events", :action => "index"
+  map.about '/about', :controller => "info", :action => "about"
+  map.stats '/stats', :controller => "info", :action => "wia_kia"
 end

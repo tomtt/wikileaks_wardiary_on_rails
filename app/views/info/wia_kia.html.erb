@@ -1,0 +1,67 @@
+<%- sum = {
+      "friendly_kia" => 0,
+      "friendly_wia" => 0,
+      "host_nation_wia" => 0,
+      "host_nation_kia" => 0,
+      "civilian_wia" => 0,
+      "civilian_kia" => 0,
+      "enemy_wia" => 0,
+      "enemy_kia" => 0,
+      "enemy_detained" => 0
+    }
+-%>
+<h1>Number of people detained / wounded / killed  in action per day.</h1>
+<table class="number_data">
+  <tr>
+    <th></th>
+    <th colspan="2">Friendly</th>
+    <th colspan="2">Host Ntn</th>
+    <th colspan="2">Civilian</th>
+    <th colspan="3">Enemy</th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>Date</th>
+    <th>WIA</TH>
+    <th>KIA</TH>
+    <th>WIA</TH>
+    <th>KIA</TH>
+    <th>WIA</TH>
+    <th>KIA</TH>
+    <th>WIA</TH>
+    <th>KIA</TH>
+    <th>Det</TH>
+    <th>Total</TH>
+  </tr>
+
+  <%- WarEvent.wia_kia_data_by_day.keys.sort.each do |day|
+    data = WarEvent.wia_kia_data_by_day[day]
+  %>
+  <tr>
+    <td><%= day %></td>
+    <td><%= sum["friendly_kia"] += data["friendly_kia"]; data["friendly_kia"] %></td>
+    <td><%= sum["friendly_wia"] += data["friendly_wia"]; data["friendly_wia"] %></td>
+    <td><%= sum["host_nation_wia"] += data["host_nation_wia"]; data["host_nation_wia"] %></td>
+    <td><%= sum["host_nation_kia"] += data["host_nation_kia"]; data["host_nation_kia"] %></td>
+    <td><%= sum["civilian_wia"] += data["civilian_wia"]; data["civilian_wia"] %></td>
+    <td><%= sum["civilian_kia"] += data["civilian_kia"]; data["civilian_kia"] %></td>
+    <td><%= sum["enemy_wia"] += data["enemy_wia"]; data["enemy_wia"] %></td>
+    <td><%= sum["enemy_kia"] += data["enemy_kia"]; data["enemy_kia"] %></td>
+    <td><%= sum["enemy_detained"] += data["enemy_detained"]; data["enemy_detained"] %></td>
+    <td class="total"><%= data.values.sum %></td>
+  </tr>
+  <%- end -%>
+  <tr class="total">
+    <td>Total</td>
+    <td><%= sum["friendly_kia"] %></td>
+    <td><%= sum["friendly_wia"] %></td>
+    <td><%= sum["host_nation_wia"] %></td>
+    <td><%= sum["host_nation_kia"] %></td>
+    <td><%= sum["civilian_wia"] %></td>
+    <td><%= sum["civilian_kia"] %></td>
+    <td><%= sum["enemy_wia"] %></td>
+    <td><%= sum["enemy_kia"] %></td>
+    <td><%= sum["enemy_detained"] %></td>
+    <td class="total"><%= sum.values.sum %></td>
+  </tr>
+</table>

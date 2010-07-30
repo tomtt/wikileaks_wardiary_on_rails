@@ -21,13 +21,21 @@
 </head>
 <body>
 
-<div class="header">Helping you find interesting information in the leaked Afghan war logs</div>
-
+<div class="header">
+  <div id='nav_links'>
+    <ul>
+      <li><%= link_to("home", root_path) %></li>
+      <li><%= link_to("about", about_path) %></li>
+      <li><%= link_to("stats", stats_path) %></li>
+    </ul>
+  </div>
+  <div id='site_info'>Helping you find interesting information in the leaked Afghan war logs</div>
+</div>
 <p style="color: green"><%= notice %></p>
 
 <%= yield %>
 
-<%= render(:partial => "shared/tag_cloud", :locals => { :tags => @term_tags_for_cloud }) %>
+<%= render(:partial => "shared/tag_cloud", :locals => { :tags => @term_tags_for_cloud }) if @show_tag_cloud %>
 
 <div class="footer">
   <span class="source_attribution">Source: <%= link_to("http://wardiary.wikileaks.org/", "http://wardiary.wikileaks.org/") %></span>

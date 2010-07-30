@@ -9,6 +9,8 @@ class WarEvent < ActiveRecord::Base
 
   acts_as_taggable_on :terms
 
+  WIA_KIA_DATA_FILENAME = File.read(Rails.root.join("data", "wia_kia_per_day.json"))
+
   def to_param
     report_key
   end
@@ -30,6 +32,46 @@ class WarEvent < ActiveRecord::Base
       end
     end
     save
+  end
+
+  def self.wia_kia_data_by_day
+    @@wia_kia_data_by_day ||=
+      load_wia_kia_data_by_day_from_json || compute_wia_kia_data_by_day
+  end
+
+  def self.compute_wia_kia_data_by_day
+    day_counts = {}
+    all.each do |war_event|
+      day_ref = war_event.date.strftime("%Y-%m-%d")
+      unless day_counts.has_key?(day_ref)
+        day_counts[day_ref] = {
+          :friendly_wia => 0,
+          :friendly_kia => 0,
+          :civilian_wia => 0,
+          :civilian_kia => 0,
+          :host_nation_wia => 0,
+          :host_nation_kia => 0,
+          :enemy_wia => 0,
+          :enemy_kia => 0,
+          :enemy_detained => 0
+        }
+      end
+      day_counts[day_ref][:friendly_wia] += war_event.friendly_wia
+      day_counts[day_ref][:friendly_kia] += war_event.friendly_kia
+      day_counts[day_ref][:civilian_wia] += war_event.civilian_wia
+      day_counts[day_ref][:civilian_kia] += war_event.civilian_kia
+      day_counts[day_ref][:host_nation_wia] += war_event.host_nation_wia
+      day_counts[day_ref][:host_nation_kia] += war_event.host_nation_kia
+      day_counts[day_ref][:enemy_wia] += war_event.enemy_wia
+      day_counts[day_ref][:enemy_kia] += war_event.enemy_kia
+      day_counts[day_ref][:enemy_detained] += war_event.enemy_detained
+    end
+    File.open(WIA_KIA_DATA_BY_DAY, "w") { |f| f.puts day_counts.to_json }
+    day_counts
+  end
+
+  def self.load_wia_kia_data_by_day_from_json
+    JSON.parse(WIA_KIA_DATA_FILENAME)
   end
 
   def self.find_all_by_search_pattern!(pattern)
