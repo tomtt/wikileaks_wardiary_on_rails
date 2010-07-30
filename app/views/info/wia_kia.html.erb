@@ -38,7 +38,7 @@
     data = WarEvent.wia_kia_data_by_day[day]
   %>
   <tr>
-    <td><%= day %></td>
+    <td><%= Date.parse(day).strftime("%a ") + day %></td>
     <td><%= sum["friendly_kia"] += data["friendly_kia"]; data["friendly_kia"] %></td>
     <td><%= sum["friendly_wia"] += data["friendly_wia"]; data["friendly_wia"] %></td>
     <td><%= sum["host_nation_wia"] += data["host_nation_wia"]; data["host_nation_wia"] %></td>
@@ -52,7 +52,7 @@
   </tr>
   <%- end -%>
   <tr class="total">
-    <td>Total</td>
+    <td>Total (<%= WarEvent.wia_kia_data_by_day.keys.size %> days)</td>
     <td><%= sum["friendly_kia"] %></td>
     <td><%= sum["friendly_wia"] %></td>
     <td><%= sum["host_nation_wia"] %></td>
