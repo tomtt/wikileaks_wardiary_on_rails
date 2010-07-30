@@ -49,6 +49,7 @@ Some ideas of things that could be done next:
     * for each tag: the number of cables it appears in
     * cumulative kia/wia
   * graphs for statistics (google chart?)
+  * parse out info on military facilities and link with other info like (http://www.globalsecurity.org/military/facility/afghanistan.htm)
   * design & create a better layout
   * provide a mouseover popup for known terms (http://wardiary.wikileaks.org/ already does this, maybe some js code can be borrowed)
   * a nicely designed mouseover on each index that shows summary and other key info
