@@ -22,24 +22,27 @@ a patch.
 
 == What's next?
 Some ideas of things that could be done next:
-* design + create a better layout
-* a nicely designed mouseover on each index that shows summary and other key info
-* create WarEventView model that counts how many times an event has been looked at
-* crowd sourcing (could maybe be a seperate app?)
-  * allow people to tag any cable with any tag
-  * allow people to flag a cable as interesting/non interesting
-  * allow people to submit stories/additional info/images/video related to a cable
-  * allow people to relate one cable to another with a reason why they are related
-* normalize data and ability to filter based on this (type_of_event, category, region, attack_on, reporting_unit, unit_name, type_of_unit, affiliation)
-* restful way to show events by date
-* fancier tag cloud
-* an api so that trusted parties can contribute information to the site
-* graphs for statistics (google chart?)
-* geo based
-  * compute a grouping by region, ability to click on the map and see nearby events
-  * show a heatmap overlayed on the map for an index
-  * show clickable items on a map
-  * some fancy tool where you can pick certain criteria and see the matching events on the map (not sure if this is possible to do given the scale of the dataset)
+* whatever you think will best help people find things they are looking for in the data
+* whatever you think will best help people build up a mental picture of what occured for an event
+* suggestions:
+  * design & create a better layout
+  * a nicely designed mouseover on each index that shows summary and other key info
+  * create WarEventView model that counts how many times an event has been looked at
+  * crowd sourcing (could maybe be a seperate app?)
+    * allow people to tag any cable with any tag
+    * allow people to flag a cable as interesting/non interesting
+    * allow people to submit stories/additional info/images/video related to a cable
+    * allow people to relate one cable to another with a reason why they are related
+  * normalize data and ability to filter based on this (type_of_event, category, region, attack_on, reporting_unit, unit_name, type_of_unit, affiliation)
+  * restful way to show events by date
+  * fancier tag cloud
+  * an api so that trusted parties can contribute information to the site
+  * graphs for statistics (google chart?)
+  * geo based
+    * compute a grouping by region, ability to click on the map and see nearby events
+    * show a heatmap overlayed on the map for an index
+    * show clickable items on a map
+    * some fancy tool where you can pick certain criteria and see the matching events on the map (not sure if this is possible to do given the scale of the dataset)
 
 == About me
 * http://www.unboxedconsulting.com/people/tom-ten-thij
