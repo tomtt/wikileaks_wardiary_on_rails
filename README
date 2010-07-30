@@ -31,6 +31,7 @@ Some ideas of things that could be done next:
   * crowd sourcing (could maybe be a seperate app?)
     * allow people to tag any cable with any tag
     * allow people to flag a cable as interesting/non interesting
+    * allow people to find cables related to a news article they know about, i.e.: the ability to narrow the potential cables down based on information provided by news articles (date, location, ?)
     * allow people to submit stories/additional info/images/video related to a cable
     * allow people to relate one cable to another with a reason why they are related
     * i18n: allow people to translate the fields of a war_event
