@@ -31,6 +31,7 @@ Some ideas of things that could be done next:
   * Create WarEventView model that counts how many times an event has been looked at
   * Normalize data and ability to filter based on this (type_of_event, category, region, attack_on, reporting_unit, unit_name, type_of_unit, affiliation)
   * Restful way to show events by date
+  * Adding a TermDefinition or changing it pattern should automatically update its taggings. This is expensive, so there also needs to be a flag to turn updating on off, when the flag is off and set to on, it should do the update then and from then on.
   * Crowd sourcing (could maybe be a seperate app?)
     * Allow people to tag any cable with any tag
     * Allow people to flag a cable as interesting/non interesting
@@ -49,6 +50,7 @@ Some ideas of things that could be done next:
     * For each tag: the number of cables it appears in
     * Cumulative kia/wia
   * Graphs for statistics (google chart?)
+  * Make the <title/> more relevant for each page
   * Parse out info on military facilities and link with other info like (http://www.globalsecurity.org/military/facility/afghanistan.htm)
   * Design & create a better layout
   * Provide a mouseover popup for known terms (http://wardiary.wikileaks.org/ already does this, maybe some js code can be borrowed)
