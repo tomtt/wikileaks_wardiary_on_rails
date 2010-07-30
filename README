@@ -24,37 +24,38 @@ a patch.
 I'm open to anybody helping out, let me know if you plan to work on something so that we will not have multiple people working on the same thing.
 
 Some ideas of things that could be done next:
-* whatever you think will best help people find things they are looking for in the data
-* whatever you think will best help people build up a mental picture of what occured for an event
-* whatever you think will cause more people to look at this
-* suggestions:
-  * create WarEventView model that counts how many times an event has been looked at
-  * normalize data and ability to filter based on this (type_of_event, category, region, attack_on, reporting_unit, unit_name, type_of_unit, affiliation)
-  * restful way to show events by date
-  * crowd sourcing (could maybe be a seperate app?)
-    * allow people to tag any cable with any tag
-    * allow people to flag a cable as interesting/non interesting
-    * allow people to find cables related to a news article they know about, i.e.: the ability to narrow the potential cables down based on information provided by news articles (date, location, ?)
-    * allow people to submit stories/additional info/images/video related to a cable
-    * allow people to relate one cable to another with a reason why they are related
-    * i18n: allow people to translate the fields of a war_event
-  * client side js to highlight interesting info: e.g. in the table view, rows with kia/wia > 0 could have subtle highlighting with the cells themselves having a color which is darker for higher numbers
-  * geo based
-    * compute a grouping by region, ability to click on the map and see nearby events
-    * show a heatmap overlayed on the map for an index
-    * show clickable items on a map
-    * some fancy tool where you can pick certain criteria and see the matching events on the map (not sure if this is possible to do given the scale of the dataset)
-    * extract grid references from summary, translate to lat/lng, ability to search based on them
-  * more interesting stats
-    * for each tag: the number of cables it appears in
-    * cumulative kia/wia
-  * graphs for statistics (google chart?)
-  * parse out info on military facilities and link with other info like (http://www.globalsecurity.org/military/facility/afghanistan.htm)
-  * design & create a better layout
-  * provide a mouseover popup for known terms (http://wardiary.wikileaks.org/ already does this, maybe some js code can be borrowed)
-  * a nicely designed mouseover on each index that shows summary and other key info
-  * fancier tag cloud
-  * an api so that trusted parties can contribute information to the site
+* Whatever you think will best help people find things they are looking for in the data
+* Whatever you think will best help people build up a mental picture of what occured for an event
+* Whatever you think will cause more people to look at this
+* Suggestions:
+  * Create WarEventView model that counts how many times an event has been looked at
+  * Normalize data and ability to filter based on this (type_of_event, category, region, attack_on, reporting_unit, unit_name, type_of_unit, affiliation)
+  * Restful way to show events by date
+  * Crowd sourcing (could maybe be a seperate app?)
+    * Allow people to tag any cable with any tag
+    * Allow people to flag a cable as interesting/non interesting
+    * Allow people to find cables related to a news article they know about, i.e.: the ability to narrow the potential cables down based on information provided by news articles (date, location, ?)
+    * Allow people to submit stories/additional info/images/video related to a cable
+    * Allow people to relate one cable to another with a reason why they are related
+    * I18n: allow people to translate the fields of a war_event
+  * Client side js to highlight interesting info: e.g. in the table view, rows with kia/wia > 0 could have subtle highlighting with the cells themselves having a color which is darker for higher numbers
+  * Geo based
+    * Compute a grouping by region, ability to click on the map and see nearby events
+    * Show a heatmap overlayed on the map for an index
+    * Show clickable items on a map
+    * Some fancy tool where you can pick certain criteria and see the matching events on the map (not sure if this is possible to do given the scale of the dataset)
+    * Extract grid references from summary, translate to lat/lng, ability to search based on them
+  * More interesting stats
+    * For each tag: the number of cables it appears in
+    * Cumulative kia/wia
+  * Graphs for statistics (google chart?)
+  * Parse out info on military facilities and link with other info like (http://www.globalsecurity.org/military/facility/afghanistan.htm)
+  * Design & create a better layout
+  * Provide a mouseover popup for known terms (http://wardiary.wikileaks.org/ already does this, maybe some js code can be borrowed)
+  * A nicely designed mouseover on each index that shows summary and other key info
+  * Fancier tag cloud
+  * An api so that trusted parties can contribute information to the site
+  * Ability to sort by the values in a column
 
 == About me
 * http://www.unboxedconsulting.com/people/tom-ten-thij
