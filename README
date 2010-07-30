@@ -26,6 +26,7 @@ I'm open to anybody helping out, let me know if you plan to work on something so
 Some ideas of things that could be done next:
 * whatever you think will best help people find things they are looking for in the data
 * whatever you think will best help people build up a mental picture of what occured for an event
+* whatever you think will cause more people to look at this
 * suggestions:
   * create WarEventView model that counts how many times an event has been looked at
   * normalize data and ability to filter based on this (type_of_event, category, region, attack_on, reporting_unit, unit_name, type_of_unit, affiliation)
@@ -37,11 +38,15 @@ Some ideas of things that could be done next:
     * allow people to submit stories/additional info/images/video related to a cable
     * allow people to relate one cable to another with a reason why they are related
     * i18n: allow people to translate the fields of a war_event
-  * client side js to highlight interesting info: e.g. in the table view, rows with kia/wia > 0 could have subtle highlighting with the cells themselves having a color which is darker for higher numbers  * geo based
+  * client side js to highlight interesting info: e.g. in the table view, rows with kia/wia > 0 could have subtle highlighting with the cells themselves having a color which is darker for higher numbers
+  * geo based
     * compute a grouping by region, ability to click on the map and see nearby events
     * show a heatmap overlayed on the map for an index
     * show clickable items on a map
     * some fancy tool where you can pick certain criteria and see the matching events on the map (not sure if this is possible to do given the scale of the dataset)
+  * more interesting stats
+    * for each tag: the number of cables it appears in
+    * cumulative kia/wia
   * graphs for statistics (google chart?)
   * design & create a better layout
   * a nicely designed mouseover on each index that shows summary and other key info
