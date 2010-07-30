@@ -23,6 +23,7 @@ a patch.
 == What's next?
 Some ideas of things that could be done next:
 * design + create a better layout
+* a nicely designed mouseover on each index that shows summary and other key info
 * create WarEventView model that counts how many times an event has been looked at
 * crowd sourcing (could maybe be a seperate app?)
   * allow people to tag any cable with any tag
