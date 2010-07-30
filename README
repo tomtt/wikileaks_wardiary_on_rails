@@ -33,6 +33,7 @@ Some ideas of things that could be done next:
     * allow people to flag a cable as interesting/non interesting
     * allow people to submit stories/additional info/images/video related to a cable
     * allow people to relate one cable to another with a reason why they are related
+    * i18n: allow people to translate the fields of a war_event
   * normalize data and ability to filter based on this (type_of_event, category, region, attack_on, reporting_unit, unit_name, type_of_unit, affiliation)
   * restful way to show events by date
   * fancier tag cloud
