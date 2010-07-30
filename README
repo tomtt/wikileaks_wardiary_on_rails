@@ -11,14 +11,34 @@ You can find a working release of this app at http://war-logs-on-rails.com
   on your system to be able to perform the import. Please get it from http://www.7-zip.org/download.html.
 * create your database.yml file, using one of the config/database.yml.*.example files if you prefer
 * rake db:create:all
-* rake:db:migrate
+* rake:db:migrate (create tables, imports the orignal data and makes it 'railsy')
 * rake db:seed (this loads some of the metadata)
-* rake wardiary:term_definitions:retag_war_events (this tags all the war events with the terms currently
-  defined in the system. Beware: it takes a long time (minutes) to run this task)
+* rake wardiary:term_definitions:tag_war_events (this tags all the war events with the terms currently
+  defined in the system. Beware: it can take a long time (hours) to run this task)
 
 The import will currently not work on systems that do not support 'piping' data to another process. If you
 can think of an efficient way to import the compressed data on these systems (i.e. windows) please submit
 a patch.
+
+== What's next?
+Some ideas of things that could be done next:
+* design + create a better layout
+* create WarEventView model that counts how many times an event has been looked at
+* crowd sourcing (could maybe be a seperate app?)
+  * allow people to tag any cable with any tag
+  * allow people to flag a cable as interesting/non interesting
+  * allow people to submit stories/additional info/images/video related to a cable
+  * allow people to relate one cable to another with a reason why they are related
+* normalize data and ability to filter based on this (type_of_event, category, region, attack_on, reporting_unit, unit_name, type_of_unit, affiliation)
+* restful way to show events by date
+* fancier tag cloud
+* an api so that trusted parties can contribute information to the site
+* graphs for statistics (google chart?)
+* geo based
+  * compute a grouping by region, ability to click on the map and see nearby events
+  * show a heatmap overlayed on the map for an index
+  * show clickable items on a map
+  * some fancy tool where you can pick certain criteria and see the matching events on the map (not sure if this is possible to do given the scale of the dataset)
 
 == About me
 * http://www.unboxedconsulting.com/people/tom-ten-thij
