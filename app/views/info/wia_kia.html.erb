@@ -9,9 +9,18 @@
       "enemy_kia" => 0,
       "enemy_detained" => 0
     }
+    previous_year = ""
 -%>
 <h1>Number of people detained / wounded / killed  in action per day.</h1>
 <table class="number_data">
+
+  <%- WarEvent.wia_kia_data_by_day.keys.sort.each do |day|
+    data = WarEvent.wia_kia_data_by_day[day]
+  %>
+  <%- if day[0,7] > previous_year
+    previous_year = day[0,7]
+ %>
+
   <tr>
     <th></th>
     <th colspan="2">Friendly</th>
@@ -21,7 +30,7 @@
     <th></th>
   </tr>
   <tr>
-    <th>Date</th>
+    <th><%= day[0,7] %></th>
     <th>WIA</TH>
     <th>KIA</TH>
     <th>WIA</TH>
@@ -33,10 +42,8 @@
     <th>Det</TH>
     <th>Total</TH>
   </tr>
+<% end %>
 
-  <%- WarEvent.wia_kia_data_by_day.keys.sort.each do |day|
-    data = WarEvent.wia_kia_data_by_day[day]
-  %>
   <tr>
     <td><%= Date.parse(day).strftime("%a ") + day %></td>
     <td><%= sum["friendly_kia"] += data["friendly_kia"]; data["friendly_kia"] %></td>
