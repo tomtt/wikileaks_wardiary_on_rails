@@ -1,6 +1,8 @@
 class InfoController < ApplicationController
   before_filter :disable_tag_cloud
 
+  caches_page :about, :wia_kia
+
   private
 
   def disable_tag_cloud

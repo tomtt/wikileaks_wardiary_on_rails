@@ -1,6 +1,8 @@
 class WarEventsController < ApplicationController
   resources_controller_for :war_events, :only => [:index, :show]
 
+  caches_page :index, :show
+
   def index
     super
   end
