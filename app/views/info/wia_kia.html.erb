@@ -45,7 +45,7 @@
 <% end %>
 
   <tr>
-    <td><%= Date.parse(day).strftime("%a ") + day %></td>
+    <td><%= link_to(Date.parse(day).strftime("%a ") + day, date_path(day)) %></td>
     <td><%= sum["friendly_kia"] += data["friendly_kia"]; data["friendly_kia"] %></td>
     <td><%= sum["friendly_wia"] += data["friendly_wia"]; data["friendly_wia"] %></td>
     <td><%= sum["host_nation_wia"] += data["host_nation_wia"]; data["host_nation_wia"] %></td>
