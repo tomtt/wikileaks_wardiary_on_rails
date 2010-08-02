@@ -140,3 +140,9 @@ table.glossary {
 table.number_data td {
   text-align: right;
 }
+
+td.title {
+  line-height: 70%;
+  font-size: 70%;
+  vertical-align: middle;
+}

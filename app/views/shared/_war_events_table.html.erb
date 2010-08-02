@@ -1,6 +1,7 @@
 <p><%= page_entries_info war_events, :entry_name => "events" %></p>
 <table id="war-events-index">
   <tr>
+    <th/>
     <th colspan="3"></th>
     <th colspan="2">Frndly</th>
     <th colspan="2">Host Ntn</th>
@@ -8,9 +9,10 @@
     <th colspan="3">Enemy</th>
     <th colspan="1"></th>
   <tr>
-    <th>Type of event</th>
+    <th/>
+    <th>Title</th>
     <th>Category</th>
-    <th>Region</th>
+    <th>Unit name</th>
     <th>WIA</TH>
     <th>KIA</TH>
     <th>WIA</TH>
@@ -25,10 +27,10 @@
 
 <% war_events.each do |war_event| %>
   <tr>
-    <td><%=h war_event.type_of_event %></td>
+    <td><%= link_to 'Show', war_event_path(war_event) %></td>
+    <td class='title'><%=h truncate(war_event.title, :length => 90) %></td>
     <td><%=h war_event.category %></td>
-    <td><%=h war_event.region %></td>
-
+    <td><%=h truncate(war_event.reporting_unit, :length => 22) %></td>
     <td><%=h war_event.friendly_wia %></td>
     <td><%=h war_event.friendly_kia %></td>
     <td><%=h war_event.host_nation_wia %></td>
@@ -40,7 +42,6 @@
     <td><%=h war_event.enemy_detained %></td>
 
     <td><%=h war_event.date.to_s(:concise) %></td>
-    <td><%= link_to 'Show', war_event_path(war_event) %></td>
   </tr>
 <% end %>
 </table>
