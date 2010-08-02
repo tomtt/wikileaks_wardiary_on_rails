@@ -195,4 +195,25 @@ describe WarEvent do
       pending 'Currently only implemented as a MySQL sql atrocity'
     end
   end
+
+  describe "on_date named scope" do
+    it "is empty if there are no events" do
+      WarEvent.on_date(Date.parse('2008-01-01')).should == []
+    end
+
+    it "does not contain an event that starts on the next day" do
+      we = Factory.create(:war_event, :date => Date.parse('2008-01-02'))
+      WarEvent.on_date(Date.parse('2008-01-01')).should == []
+    end
+
+    it "contains an event that starts on that date" do
+      we = Factory.create(:war_event, :date => Date.parse('2008-01-01'))
+      WarEvent.on_date(Date.parse('2008-01-01')).should == [we]
+    end
+
+    it "does not contain an event that starts before that date" do
+      we = Factory.create(:war_event, :date => Date.parse('2008-01-01'))
+      WarEvent.on_date(Date.parse('2008-01-02')).should == []
+    end
+  end
 end

@@ -11,6 +11,13 @@ class WarEvent < ActiveRecord::Base
 
   WIA_KIA_DATA_FILENAME = File.read(Rails.root.join("data", "wia_kia_per_day.json"))
 
+  named_scope :on_date, lambda { |date|
+    next_day = date + 1.days
+    {
+      :conditions => ["date >= ? AND date < ?", date, next_day]
+    }
+  }
+
   def to_param
     report_key
   end
