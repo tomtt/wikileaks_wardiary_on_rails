@@ -38,7 +38,7 @@ describe DatesController do
       mock_service = mock('war events list')
       WarEvent.stub!(:on_date).and_return(mock_service)
       mock_service.should_receive(:paginate).
-        with(hash_including(:page => "3", :order => 'date DESC'))
+        with(hash_including(:page => "3", :order => 'date ASC'))
       get :show, :id => '2008-03-21', :page => "3"
     end
   end
