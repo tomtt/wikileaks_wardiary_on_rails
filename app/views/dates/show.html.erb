@@ -1,1 +1,2 @@
-<%= @war_events.map(&:summary) %>
+<h1>Events on <%= @date.to_s(:concise) %></h1>
+<%= render(:partial => "shared/war_events_table", :locals => { :war_events => @war_events }) %>
