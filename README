@@ -30,7 +30,6 @@ Some ideas of things that could be done next:
 * Suggestions:
   * Create WarEventView model that counts how many times an event has been looked at
   * Normalize data and ability to filter based on this (type_of_event, category, region, attack_on, reporting_unit, unit_name, type_of_unit, affiliation)
-  * Restful way to show events by date
   * Adding a TermDefinition or changing it pattern should automatically update its taggings. This is expensive, so there also needs to be a flag to turn updating on off, when the flag is off and set to on, it should do the update then and from then on.
   * Crowd sourcing (could maybe be a seperate app?)
     * Allow people to tag any cable with any tag
