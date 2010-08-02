@@ -5,6 +5,8 @@ class TermTagsController < ApplicationController
 
   def show
     @term_tag = resource_service.find(params[:id])
+    @page_title = "War events tagged with \"#{@term_tag.name}\""
+
     @definition = TermDefinition.find_by_term(@term_tag.name).definition
     @war_events = WarEvent.tagged_with(@term_tag.name).paginate(:page => params[:page], :order => 'date DESC')
   end

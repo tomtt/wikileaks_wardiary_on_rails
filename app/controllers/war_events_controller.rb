@@ -9,6 +9,7 @@ class WarEventsController < ApplicationController
 
   def show
     @war_event = find_resource
+    @page_title = "War Event: #{@war_event.title}"
     @term_list = @war_event.term_list
     @tags = @term_list.map { |t| ActsAsTaggableOn::Tag.find_by_name(t) }
     @term_definitions = @term_list.map { |t| TermDefinition.find_by_term(t) }
