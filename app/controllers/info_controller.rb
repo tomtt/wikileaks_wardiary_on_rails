@@ -3,6 +3,10 @@ class InfoController < ApplicationController
 
   caches_page :about, :wia_kia
 
+  def intentional_error
+    raise "An error was intentionally raised"
+  end
+
   private
 
   def disable_tag_cloud
