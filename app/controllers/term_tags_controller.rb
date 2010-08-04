@@ -4,7 +4,11 @@ class TermTagsController < ApplicationController
   caches_page :index, :show
 
   def show
-    @term_tag = resource_service.find(params[:id])
+    begin
+      super
+    rescue ActiveRecord::RecordNotFound
+      render_404 and return
+    end
     @page_title = "War events tagged with \"#{@term_tag.name}\""
 
     @definition = TermDefinition.find_by_term(@term_tag.name).definition
