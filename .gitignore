@@ -36,7 +36,6 @@ public/features/*
 test/tmp
 public/assets
 public/assets-test
-config/initializers/hoptoad.rb
 
 config/initializers/personal_options.rb
 rerun.txt
