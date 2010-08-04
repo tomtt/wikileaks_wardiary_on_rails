@@ -12,6 +12,14 @@ class ApplicationController < ActionController::Base
 
   private
 
+  def render_404
+    respond_to do |type|
+      type.html { render :file => "#{RAILS_ROOT}/public/404.html",  :status => 404 }
+      type.all { render :nothing => true, :status => 404 }
+    end
+    true # so we can do "render_404 and return"
+  end
+
   def load_cloud_tag
     @show_tag_cloud = true
     @term_tags_for_cloud = JSON.parse(@@term_tag_count_json)
