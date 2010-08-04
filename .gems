@@ -2,3 +2,4 @@ rails
 will_paginate
 acts-as-taggable-on
 friendly_id
+hoptoad_notifier

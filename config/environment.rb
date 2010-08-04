@@ -24,6 +24,7 @@ Rails::Initializer.run do |config|
   config.gem 'will_paginate'
   config.gem 'acts-as-taggable-on'
   config.gem 'friendly_id'
+  config.gem 'hoptoad_notifier'
 
   if %w(development test cucumber).include?(RAILS_ENV)
     config.gem 'rspec', :lib => false
