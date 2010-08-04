@@ -8,9 +8,16 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
 
+  before_filter :ensure_domain
   before_filter :load_cloud_tag
 
   private
+
+  def ensure_domain
+    if ENV["DOMAIN_TO_REDIRECT_TO"] && request.env['HTTP_HOST'] != ENV["DOMAIN_TO_REDIRECT_TO"]
+      redirect_to request.url.sub(request.env['HTTP_HOST'], ENV["DOMAIN_TO_REDIRECT_TO"])
+    end
+  end
 
   def render_404
     respond_to do |type|
