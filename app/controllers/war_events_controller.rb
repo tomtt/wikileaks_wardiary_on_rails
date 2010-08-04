@@ -8,8 +8,11 @@ class WarEventsController < ApplicationController
   end
 
   def show
-    super
-    render_404 and return  unless @war_event
+    begin
+      super
+    rescue ActiveRecord::RecordNotFound
+      render_404 and return
+    end
     @page_title = "War Event: #{@war_event.title}"
     @term_list = @war_event.term_list
     @tags = @term_list.map { |t| ActsAsTaggableOn::Tag.find_by_name(t) }
@@ -21,6 +24,6 @@ class WarEventsController < ApplicationController
   end
 
   def find_resource
-    WarEvent.find_by_report_key(params[:id])
+    WarEvent.find_by_report_key!(params[:id])
   end
 end
