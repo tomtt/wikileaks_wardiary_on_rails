@@ -4,7 +4,11 @@ class InfoController < ApplicationController
   caches_page :about, :wia_kia
 
   def intentional_error
-    raise "An error was intentionally raised"
+    if ENV['DISABLE_INTENTIONAL_ERROR']
+      render(:text => "Nothing to see here, please move along...")
+    else
+      raise "An error was intentionally raised"
+    end
   end
 
   private
