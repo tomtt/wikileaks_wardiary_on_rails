@@ -8,5 +8,5 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => "war_events", :action => "index"
   map.about '/about', :controller => "info", :action => "about"
   map.stats '/stats', :controller => "info", :action => "wia_kia"
-  map.stats '/intentional_error', :controller => "info", :action => "intentional_error"
+  map.error '/intentional_error', :controller => "info", :action => "intentional_error"
 end
