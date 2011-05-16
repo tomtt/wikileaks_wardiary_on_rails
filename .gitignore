@@ -41,3 +41,5 @@ config/initializers/personal_options.rb
 rerun.txt
 
 public/tmp.html
+.bundle
+.rvmrc
