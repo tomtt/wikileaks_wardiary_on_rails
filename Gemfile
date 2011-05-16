@@ -21,6 +21,7 @@ group :development, :test do
   gem "pickle"
   gem "mongrel"
   gem "term-ansicolor"
+  gem "guardian-content"
 end
 
 group :dev_extra do

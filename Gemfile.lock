@@ -30,6 +30,7 @@ GEM
       ffi (~> 1.0.6)
     columnize (0.3.2)
     configuration (1.2.0)
+    crack (0.1.8)
     cucumber (0.10.2)
       builder (>= 2.1.2)
       diff-lcs (>= 1.1.2)
@@ -52,6 +53,8 @@ GEM
     gem_plugin (0.2.3)
     gherkin (2.3.7)
       json (>= 1.4.6)
+    guardian-content (0.2.2)
+      httparty (>= 0.5.2)
     heroku (2.1.4)
       launchy (>= 0.3.2)
       rest-client (~> 1.6.1)
@@ -59,6 +62,8 @@ GEM
     hoptoad_notifier (2.4.9)
       activesupport
       builder
+    httparty (0.7.7)
+      crack (= 0.1.8)
     json (1.5.1)
     json_pure (1.5.1)
     launchy (0.4.0)
@@ -142,6 +147,7 @@ DEPENDENCIES
   cuke-inspector
   database_cleaner
   factory_girl
+  guardian-content
   heroku
   hoptoad_notifier
   launchy
