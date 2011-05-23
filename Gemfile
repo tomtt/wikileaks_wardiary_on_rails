@@ -6,6 +6,8 @@ gem "uuidtools"
 gem "will_paginate"
 gem "hoptoad_notifier"
 gem "taps", "~> 0.3.22"
+gem "guardian-content", :git => "git://github.com/tomtt/contentapi-ruby.git"
+gem "json"
 
 group :development, :test do
   gem "heroku"
@@ -21,7 +23,6 @@ group :development, :test do
   gem "pickle"
   gem "mongrel"
   gem "term-ansicolor"
-  gem "guardian-content", :git => "git://github.com/tomtt/contentapi-ruby.git"
 end
 
 group :dev_extra do

@@ -155,6 +155,7 @@ DEPENDENCIES
   guardian-content!
   heroku
   hoptoad_notifier
+  json
   launchy
   mongrel
   mysql
