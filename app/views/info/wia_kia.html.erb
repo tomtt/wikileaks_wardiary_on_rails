@@ -30,17 +30,18 @@
     <th></th>
   </tr>
   <tr>
-    <th><%= day[0,7] %></th>
-    <th>WIA</TH>
-    <th>KIA</TH>
-    <th>WIA</TH>
-    <th>KIA</TH>
-    <th>WIA</TH>
-    <th>KIA</TH>
-    <th>WIA</TH>
-    <th>KIA</TH>
-    <th>Det</TH>
-    <th>Total</TH>
+    <th class="month_label"><a href="#month_<%= day [0,7] %>" name="month_<%= day [0,7] %>"><%= day[0,7] %></a></th>
+    <th>WIA</th>
+    <th>KIA</th>
+    <th>WIA</th>
+    <th>KIA</th>
+    <th>WIA</th>
+    <th>KIA</th>
+    <th>WIA</th>
+    <th>KIA</th>
+    <th>Det</th>
+    <th>Total</th>
+    <th>Guardian headline of that day</th>
   </tr>
 <% end %>
 
@@ -56,6 +57,7 @@
     <td><%= sum["enemy_kia"] += data["enemy_kia"]; data["enemy_kia"] %></td>
     <td><%= sum["enemy_detained"] += data["enemy_detained"]; data["enemy_detained"] %></td>
     <td class="total"><%= data.values.sum %></td>
+    <td class="headline"><%= guardian_headline_for_day(day) %></td>
   </tr>
   <%- end -%>
   <tr class="total">

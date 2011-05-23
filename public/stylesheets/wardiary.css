@@ -146,3 +146,15 @@ td.title {
   font-size: 70%;
   vertical-align: middle;
 }
+
+table.number_data td.headline {
+  vertical-align: middle;
+  line-height: 80%;
+  font-size: 80%;
+  text-align: left;
+  margin-left: 1em;
+}
+
+th.month_label a {
+   text-decoration: none;
+}

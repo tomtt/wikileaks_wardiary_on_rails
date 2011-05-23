@@ -11,6 +11,11 @@ class InfoController < ApplicationController
     end
   end
 
+  def wia_kia
+    @guardian_headlines = Headline.load_hash_from_json
+    @guardian_headlines[Date.parse("2004-01-01")] = Headline.new("title" => "Headlines are only available from September 2005", "url" => "#month_2005-09")
+  end
+
   private
 
   def disable_tag_cloud
