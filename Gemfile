@@ -21,7 +21,7 @@ group :development, :test do
   gem "pickle"
   gem "mongrel"
   gem "term-ansicolor"
-  gem "guardian-content"
+  gem "guardian-content", :path => "/Users/tomtt/created/projects/guardian/contentapi-ruby"
 end
 
 group :dev_extra do
