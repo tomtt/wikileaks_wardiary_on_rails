@@ -1,5 +1,6 @@
-PATH
-  remote: ~/created/projects/guardian/contentapi-ruby
+GIT
+  remote: git://github.com/tomtt/contentapi-ruby.git
+  revision: 4fc4afd18040d6c803c14b80c972d115611edad2
   specs:
     guardian-content (0.2.2)
       httparty (>= 0.5.2)

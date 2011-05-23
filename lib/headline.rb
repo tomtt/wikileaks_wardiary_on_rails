@@ -10,7 +10,6 @@ class Headline
     options["show-editor-picks"] = "true"
     options["show-most-viewed"] = "true"
     articles = GuardianContent::Content.find_all_by_id(topstories_id, options)
-    # http://content.guardianapis.com/theguardian/mainsection/topstories?format=json&show-fields=newspaperPageNumber&show-editors-picks=true&from-date=2009-10-10&to-date=2009-10-10&order-by=newest&show-most-viewed=true&api-key=apikey
   end
 
   def self.obtain_headline_data
