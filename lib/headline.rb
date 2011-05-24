@@ -1,5 +1,3 @@
-require 'guardian-content'
-
 class Headline
   def self.find_for_date(date)
     topstories_id = "theguardian/mainsection/topstories"
